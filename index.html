@@ -3,20 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/b384e5efd7.js" crossorigin="anonymous"></script>
 	<title>Reservia</title>
 </head>
 <body>
-	<div id="bloc_page">
+	
 	<header>
-		<div id="logo">
+
+		<div class="logo">
 			
 			<img src="images/logo/reservia@3x.png" alt="Nom du site" />
 			
 		</div>
 
-		<nav classe="navbar">
+		<nav>
 			<ul>
 				<li><a href="#">Hébergements</a></li>
 				<li><a href="#">Activitées</a></li>
@@ -25,11 +26,13 @@
 		</nav>
 	</header>
 
-<main>
-	<section>
+	<main>
+		<section>
 
-			<h2>Trouver votre hébergement pour des vacances de rêve</h2>
-			<h3>En plein centre ville ou en pleine nature</h3>
+			<div class="section">
+				<h2>Trouver votre hébergement pour des vacances de rêve</h2>
+				<p>En plein centre ville ou en pleine nature</p>
+			</div>
 
 			<div class="recherche">
 
@@ -37,9 +40,9 @@
 	  			<input type="text" name="Marseille, France" placeholder="Marseille, France" />
 	  			<input type="submit" value="Recherche" />
 
-	  			</div>
+	  		</div>
 	
-		</div>
+			</div>
 
 			<div class="filtres">
 
@@ -56,23 +59,23 @@
 
 			<div class="info">
 
-				<i class="fas fa-info-circle">Plus de 500 logements sont disponibles dans cette ville</i>
+				<p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
 				
 			</div>	
 
-	</section>
+		</section>
 
-	<section>
-		<div id="conteneur">
+		<section>
+			<div class="container">
 
-			<h2>Hébergements à Marseille</h2>
+				<h2>Hébergements à Marseille</h2>
 			
-			<div id="liste">
+			
 				<div class="chambre1">
 
-					<img src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hôtel de la mer" />
+					<img src=" images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hôtel de la mer" />
 					<p><strong>Hôtel de la mer</strong><br/>Nuit à partir de 46€</p>
-					<div class="icone_star1">
+					<div class="icone_star">
 						<ul>
 							<li><i class="fas fa-star"></i></li>
 							<li><i class="fas fa-star"></i></li>
@@ -88,7 +91,7 @@
 
 					<img src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" />
 					<p><strong>Hôtel du port</strong><br/>Nuit à partir de 52€<br></p>
-					<div class="icone_star2">
+					<div class="icone_star">
 						<ul>
 							<li><i class="fas fa-star"></i></li>
 							<li><i class="fas fa-star"></i></li>
@@ -105,7 +108,7 @@
 					<p><strong>Hôtel les mouettes</strong><br>Nuit à partir de 76€
 					</p>
 
-					<div class="icone_stra3">
+					<div class="icone_star">
 						<ul>
 							<li><i class="fas fa-star"></i></li>
 							<li><i class="fas fa-star"></i></li>
@@ -121,7 +124,7 @@
 					<img src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" />
 					<p><strong>Auberge la Cannebière</strong><br>Nuit à partir de 25€</p>
 
-					<div class="icone_star4">
+					<div class="icone_star">
 						<ul>
 							<li><i class="fas fa-star"></i></li>
 							<li><i class="fas fa-star"></i></li>
@@ -137,7 +140,7 @@
 					<img src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" />
 					<p><strong>Auberge le panier</strong><br>Nuit à partir de 23€</p>
 
-					<div class="icone_star5">
+					<div class="icone_star">
 						<ul>
 							<li><i class="fas fa-star"></i></li>
 							<li><i class="fas fa-star"></i></li>
@@ -153,7 +156,7 @@
 					<img src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" />
 					<p><strong>Hôtel chez Amina</strong><br>Nuit à partir de 96€</p>
 
-					<div class="icone_star6">
+					<div class="icone_star">
 						<ul>
 							<li><i class="fas fa-star"></i></li>
 							<li><i class="fas fa-star"></i></li>
@@ -169,10 +172,10 @@
 			</div>
 		</div>
 
-		<div id="conteneur">
+		<div id="container">
 
 			<aside>
-				<h4>Les plus populaires</h4>
+				<h2>Les plus populaires</h2>
 
 				<div class="chambre7">
 					<img src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
@@ -267,6 +270,9 @@
 
 		</div>
 	</footer>
+	
 	</div>
+	
+	
 </body>
 </html>
