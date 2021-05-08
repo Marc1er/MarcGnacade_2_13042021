@@ -1,17 +1,154 @@
-.fas fas-star
+body
 {
-	color: blue;
+	width: 100%;
+	margin: auto;
 }
 
-.icone
+header
 {
 	display: flex;
-	color: 	#0065FC;
-	font-size: 0.5em;
-	text-align-last: red
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.logo img
+{
+	color: #0065FC;
+	width: 4em;
 }
 
-span 
+nav ul
 {
-	color: #DCDCDC;
+	list-style-type:none;
+	display: flex;
+	
+	
+}
+
+nav li
+{
+	margin-left: 20px;
+	text-align: left;
+
+}
+
+nav a
+{
+	font-size: 0.6em;
+	color: black;
+	padding-bottom: 0.5px;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color:#0065FC;
+	border-top: 1px solid #0065FC;	
+}
+	
+.section
+{
+	
+	line-height: 3px;
+	
+}
+
+.section h2
+{
+	font-size: 0.9em;
+	font-family: raleway;
+}
+
+.section p
+{
+	font-size: 0.6em;
+	font-family: raleway;
+	font-weight: inherit;
+}
+
+
+.info
+{
+	font-size: 0.6em;
+	font-family: raleway;
+	font-weight: inherit;
+}
+
+.info i
+{
+	color:#F2F2F2;
+	
+}
+
+.container
+{
+	background-color:#F2F2F2;
+	width: 60%;
+	padding:60Px; 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	float: left;
+
+}
+
+.container h2
+{
+	font-size: 0.8em;
+	font-family: raleway;
+}
+
+.container h3
+{
+	font-family: raleway;
+	font-size: 0.6em;
+}
+.container img
+{
+	width: 10em;
+	height: 5em;
+	border: 1px solid white;
+	border-radius: 10%;
+	background-color: #fff;
+
+}
+
+.container ul 
+{
+	list-style-type:none;
+	font-size: 0.6em;
+	display: flex;
+
+}
+
+#container
+{
+	background-color:#F2F2F2;
+	width: 30%;
+	padding:60Px; 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#container img
+{
+	width: 5em;
+	height: 3em;
+	border: 1px solid white;
+	border-radius: 10%;
+	background-color: #fff;
+}
+
+#container ul
+{
+	list-style-type:none;
+	font-size: 0.6em;
+	display: flex;
+
+}
+
+#container h2
+{
+	font-size: 0.8em;
+	font-family: raleway;
 }
