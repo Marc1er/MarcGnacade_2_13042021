@@ -1,4 +1,7 @@
-
+body
+{
+	margin-left: 30px;
+}
 
 header
 {
@@ -11,7 +14,8 @@ header
 #logo img
 {
 	color: #0065FC;
-	width: 4em;
+	width: 70px;
+	margin-left: 15px;
 }
 
 nav ul  
@@ -19,7 +23,7 @@ nav ul
 	list-style-type:none;
 	display: flex;
 	position: absolute;
-	left: 50em;	
+	left: 600px;	
 }
 
 nav li
@@ -50,12 +54,13 @@ nav a:hover
 	font-family: raleway, sans-serif;
 	line-height: 3px;
 	padding: 10px;
+	margin-left: 15px;
 }
 
 .recherche
 {
 	display:flex;
-	margin: 5px;
+	margin-left: 15px;
 }
 
 .filtres
@@ -63,7 +68,7 @@ nav a:hover
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	margin-left: 5px;
+	margin-left: 15px;
 
 }
 .filtres h2
@@ -270,7 +275,7 @@ border-bottom-left-radius:10px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	margin-left: 5px;
+	margin-left: 15px;
 }
 .info i
 {
@@ -295,16 +300,20 @@ border-bottom-left-radius:10px;
 	margin-bottom: 10px;
 }
 
- .heber 
-{
-	position: relative;
-}
+ .heber
+ {
+ 	position: relative;
+ 
+ }
+
 .heber h3
 {
+	
 	position: absolute;
-	left: 1em;
+	margin-left: 30px;
+	font-size: 0.6em;
 	font-family: raleway, sans-serif;
-	font-size: 1em;
+	
 }
 
  .plus{
@@ -315,10 +324,9 @@ border-bottom-left-radius:10px;
 	font-size: 0.6em;
 	font-weight: bold;
 	font-family:raleway, sans-serif;
-	text-decoration: bold;
 	position: absolute;
-	left: 1em;
-	top:-3em;
+	right: 550px;
+	top:330px;
 }
 
 section
@@ -326,6 +334,7 @@ section
 	display: flex;
 	justify-content:flex-start;
 	align-items: space-around;
+
 }
 .container
 {
@@ -333,10 +342,10 @@ section
 	display: flex;
 	flex-wrap: wrap;
 	width: 600px;
-	height: 300px;
-	padding: 30px;
-	padding-top: 30px
-	padding-bottom:30px;
+	height: 310px;
+	margin-left: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	border-radius:10px;
 	 
 }
@@ -450,9 +459,10 @@ border-top-right-radius: 10px;
 
 aside
 {
+	display: flex;
 	display: inline-flex;
 	justify-content
-	
+	position: relative;
 	
 }
 
@@ -462,22 +472,25 @@ aside .container ul
 	list-style-type:none;
 	font-size:6px; 
 	color:#0065FC; 
+	
 } 
 
 aside .container
 {
 	display: flex;
 	width: 250px;
-	height: 300px;
-	
+	height: 310px;
+	margin-left: 30px;
+	padding-top: 40px;
+	padding-bottom:20px;
 	border-radius:10px;
 	background-color:#F2F2F2; 
 	}
 
 aside .container .bloc_1 img
 {
-	width: 6em;
-	height: 5em;
+	width: 100px;
+	height: 78px;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 	display: flex;
@@ -488,55 +501,65 @@ aside .container .bloc_1 img
 aside .bloc_1
 {
 	background-color: #fff;
-	border:4px solid #fff;
+	border:3px solid #fff;
 	border-radius: 10px;
-	height: 5em; 
-	width: 15em;
+	margin: 5px;
+	height: 78px; 
+	width: 230px;
+	position: relative;
 }
 
 aside .chambre7 h3
 {
-	font-size: 0.7em;
+	font-size: 0.6em;
 	font-family: raleway, sans-serif;
-	left: 11.5em;
-	bottom:29em;
+	position: absolute;
+	left:110px; 
+	top:-8px;
+	z-index: 20;
 }
 
 aside .chambre7 p
 {
-	font-size: 0.6em;
+	font-size: 0.5em;
 	font-family: raleway, sans-serif;
-	left: 13.5em;
-	bottom:32em;
+	position: absolute;
+	left: 110px;
+	top:20px;
+	
 }
 
 aside .chambre7 .icone_star1 ul
 {
-	
-	left: 9.5em;
-	bottom: 29.5em;
+	position: absolute;
+	left: 70px;
+	top: 60px;
 	color:#0065FC;
 }
 
 aside .chambre8 h3
 {
-	font-size: 0.7em;
+	font-size: 0.6em;
 	font-family: raleway, sans-serif;
-	left: 11.5em;
-	bottom:19em;
+	position: absolute;
+	left:110px;
+	top:-10px;
+	z-index: 20;
 }
 
 aside .chambre8 p
 {
-	font-size: 0.7em;
+	font-size: 0.5em;
 	font-family: raleway, sans-serif;
-	left: 11.5em;
-	bottom:17em;
+	position: absolute;
+	left:110px;
+	top:18px;
 }
 aside .chambre8 .icone_star1 ul
 {
-	left: 9.5em;
-	bottom: 17em;
+	position: absolute;
+	left:70px;
+	top:60px;
 	color:#0065FC;
 }
 
@@ -547,24 +570,27 @@ aside .chambre8 .icone_star1 span
 
 aside .chambre9 h3
 {
-	font-size: 0.7em;
+	font-size: 0.6em;
 	font-family: raleway, sans-serif;
-	left: 12em;
-	bottom:8.5em;
+	position: absolute;
+	left: 110px;
+	top:-10px;
 }
 
 aside .chambre9 p
 {
-	font-size: 0.7em;
+	font-size: 0.5em;
 	font-family: raleway, sans-serif;
-	left: 12em;
-	bottom:6.5em;
+	position: absolute;
+	left: 110px;
+	top:18px;
 }
 
 aside .chambre9 .icone_star1 ul
 {
-	left: 10em;
-	bottom: 4.5em;
+	position: absolute;
+	left: 70px;
+	top:60px;
 	color:#0065FC;	
 }
 
@@ -573,72 +599,76 @@ aside .chambre9 .icone_star1 span
 	color:#F2F2F2; 
 }
 
-aside .icon h2
+#icone
 {
-	font-size: 1em;
+	position: relative;
+	
+}
+#icone .icon h2
+{
+	
+	font-size: 0.7em;
 	font-family: raleway, sans-serif;
-	left:48.5em;
-	bottom: 25em;
-	z-index: 1;
+	position: absolute;
+	left:50px;
+	top: 0px;
+	z-index: 20;
 }
 
-aside .icon i
+#icone .icon i
 {
-	font-size: 1em;
-	left:63.5em;
-	bottom: 26em;
-	z-index: 1;
+	position: absolute;
+	font-size: 0.8em;
+	left:250px;
+	top: 10px;
+	z-index: 20;
 }
 
 .activités
 {
-	
+	position: relative;
 }
 .activites h2
 {
-	font-size:0.9em;
+	font-size:0.8em;
 	font-family:raleway, sans-serif;
-	
-	bottom: 9em;
-	left: 2em;
-	z-index: 6;
+	position: absolute;
+	left: 60px;
 }
 
 .container_2
 {
 	display: flex;
-	width: 65em;
-	height: 20em;
-	padding: 10px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	justify-content:flex-start;
+	width: 870px;
+	height: 310px;
+	margin-top: 40px;
+	margin-left: 20px;: 
 	border-radius:10px;
-	justify-content: space-between;
-	align-content: space-between;
 	flex-wrap: wrap;
-	flex-direction: row;
-	background-color:; 
+	background-color:;
+	position: relative; 
 }
 
 .container_2 .activités_1 img
 {
-	width: 15em;
-	height: 6em;
+	width: 200px;
+	height:90px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 	
 }
 
-.bloc_0
+.container_2 .bloc_0
 {
 	background-color: #fff;
 	border: 1px solid #fff;
-	border-radius: 10px;
-	height: 9em; 
-	width: 15em;
+	border-radius: 12px;
+	height:120px; 
+	width: 200px;
 	position: absolute;
-	left: 51em;
-	bottom: -2em;
+	right:0px;
+	top:0px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	z-index: 5;
 }
@@ -646,14 +676,15 @@ aside .icon i
 {
 	font-size: 0.8em;
 	font-family: raleway, sans-serif;
-	
-	left: 1.5em;
+	position: absolute;
+	left:10px;
+	top:90px;
 }
 
 .container_2 .activités_2 img
 {
-	width: 15em;
-	height: 5em;
+	width: 200px;
+	height:70px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
@@ -663,11 +694,11 @@ aside .icon i
 	background-color: #fff;
 	border: 1px solid #fff;
 	border-radius: 10px;
-	height: 7.5em; 
-	width: 15em;
-	
-	left: 17em;
-	bottom:-12.5em;
+	height:100px; 
+	width:200px; 
+	position: absolute;
+	left: 230px;
+	top: 170px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	z-index: 3;
 }
@@ -676,14 +707,15 @@ aside .icon i
 {
 	font-size: 0.8em;
 	font-family: raleway, sans-serif;
-	
-	left: 1.5em;
+	position: absolute;
+	left:10px;
+	top:70px;
 }
 
 .container_2 .activités_3 img
 {
-	width: 15em;
-	height: 17em;
+	width: 180px;
+	height: 230px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
@@ -694,26 +726,28 @@ aside .icon i
 	border: 1px solid #fff;
 	border-style: none;
 	border-radius: 10px;
-	height: 20em; 
-	width: 15em;
-
-	left: 34em;
+	height: 270px; 
+	width: 180px;
+	position: absolute;
+	right:230px;
+	top: 0px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	z-index: 3;
 }
 
 .bloc_3 h3
 {
-	font-size: 0.8em;
+	font-size: 0.6em;
 	font-family: raleway, sans-serif;
-	
-	left: 1em;
+	position: absolute;
+	left:10px;
+	top:230px;
 }
 
 .container_2 .activités_4 img
 {
-	width: 15em;
-	height: 6em;
+	width: 200px;
+	height:90px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
@@ -723,11 +757,11 @@ aside .icon i
 	background-color: #fff;
 	border: 1px solid #fff;
 	border-radius: 10px;
-	height: 9em; 
-	width: 15em;
-	
-	left: 51em;
-	bottom: -12.5em;
+	height:120px; 
+	width: 200px;
+	position: absolute;
+	right: 0px;
+	top:150px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	z-index: 4;
 }
@@ -735,15 +769,16 @@ aside .icon i
 {
 	font-size: 0.8em;
 	font-family: raleway, sans-serif;
-
-	left: 1em;
+	position: absolute;
+	left:10px;
+	top: 90px;
 
 }
 
 .container_2 .activités_5 img
 {
-	width: 15em;
-	height: 9em;
+	width: 200px;
+	height:110px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
@@ -753,10 +788,10 @@ aside .icon i
 	background-color: #fff;
 	border: 1px solid #fff;
 	border-radius: 10px;
-	height: 11em; 
-	width: 15em;
-
-	left: 17em;
+	height:150px; 
+	width: 200px;
+	position: absolute;
+	left:230px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	z-index: 2;
 	
@@ -764,18 +799,18 @@ aside .icon i
 
 .bloc_5 h3
 {
-	font-size: 0.8em;
+	font-size: 0.6em;
 	font-family: raleway, sans-serif;
-	
-	left: 1em;
-	bottom: -0.5em;
+	position:absolute;
+	left: 10px;
+	top:110px;
 	z-index: 1;
 }
 
 .container_2 .activités_6 img
 {
-	width: 14em;
-	height: 17em;
+	width: 180px;
+	height: 230px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
@@ -785,73 +820,80 @@ aside .icon i
 	background-color: #fff;
 	border: 1px solid #fff;
 	border-style: none;
+	position: absolute;
+	left: 15px;
 	border-radius: 10px;
-	height: 20em; 
-	width: 14em;
+	height: 270px; 
+	width: 180px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	
 }
 
 .bloc_6 h3
 {
-	font-size: 0.8em;
+	font-size: 0.6em;
 	font-family: raleway, sans-serif;
-	
-	left: 1em;
+	position: absolute;
+	left:5px;
+	top:230px;
 }
 
 footer
 {
+	position: relative;
 	width:50%; 
 	height:100px;
 	background-color:#F2F2F2;
 	
 }
-
-footer .footer
+ .footer
 {
-	font-size:0.7em;
+	display: flex;
+	font-size:0.6em;
 	font-family:raleway, sans-serif;
-	position: relative;	
+
 }
 
-.footer .rubrique1 h2
+.rubrique1 h2
 {
-	left: 2em;
+	display: flex;
+	align-items: space-between;
+	justify-content: space-between;
+	position:absolute;
+	left: 20px;
 }
-.footer .rubrique1 ul
+.rubrique1 ul
 {
-	
-	bottom: -9em;
-	left: -0.8em;
+	position: absolute;
+	left: -20px;
+	bottom: 15px;
 	list-style-type:none;
 	line-height: 1.5em;
 }
-
-.footer .rubrique2 h2
+.rubrique2 h2
 {
-	
-	left: 20em;
+	position: absolute;
+	left: 300px;
 }
-.footer .rubrique2 ul
+.rubrique2 ul
 {
-	
-	bottom: -8em;
-	left: 26.5em;
+	position: absolute;
+	bottom: 25px;
+	left: 265px;
 	list-style-type:none;
 	line-height: 1.5em;
 }
 
 .footer .rubrique3 h2
 {
-	p
-	left: 45em;
+	position: absolute;
+	right: 200px;
 }
 .footer .rubrique3 ul
 {
-	
-	bottom: -8em;
-	left: 64em;
+	position: absolute;
+	bottom: 25px;
+	right: 200px;
 	list-style-type:none;
 	line-height: 1.5em;	
 }
