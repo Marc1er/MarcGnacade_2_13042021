@@ -1,13 +1,13 @@
 body
 {
-	margin-left: 30px;
+	margin:20px 50px 20px 50px;
+	font-family: 'Raleway', sans-serif;
 }
 
 header
 {
 	display: flex;
 	justify-content: space-between;
-	align-items:space-around;
 	position: relative;
 
 }
@@ -30,7 +30,16 @@ nav li
 	margin-left: 20px;
 	text-align: left;		
 }
-
+nav li .héberger
+{
+	color:#0065FC;
+	border-top: 1px solid #0065FC;
+	padding: 20px;
+}
+nav li span a
+{
+	color: #0065FC;
+}
 nav a
 {
 	font-size: 0.8em;
@@ -39,18 +48,10 @@ nav a
 	text-decoration: none;
 }
 
-nav a:hover
-{
-	color:#0065FC;
-	border-top: 2px solid #0065FC;
-	padding: 20px;	
-}
-
 /* renseignement */	
 .renseignement
 {
 	font-size: 0.6em;
-	font-family: raleway, sans-serif;
 	line-height: 3px;
 	padding: 10px;
 	margin-left: 10px;
@@ -69,7 +70,6 @@ nav a:hover
 	font-size: 16px;
 	padding: 5px;
 	border-style:none;
-	font-family: raleway, sans-serif;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
@@ -81,7 +81,6 @@ nav a:hover
 	padding: 5px;
 	margin-left: 10px;
  	font-size: 16px;
- 	font-family: raleway, sans-serif;
  	border-style: none;
 }
 
@@ -96,7 +95,6 @@ nav a:hover
 .filtres h2
 {
 	font-size: 0.8em;
-	font-family: raleway, sans-serif;
 	margin-left:15px;
 	margin-top: 25px;
 	margin-right:10px;
@@ -105,7 +103,7 @@ nav a:hover
 {
 	display: flex;
 	font-size: 0.8em;
-	font-family: raleway, sans-serif;
+
 
 }
 
@@ -134,7 +132,6 @@ nav a:hover
 {
 	font-size: 0.9em;
 	font-weight: bold;
-	font-family: raleway,sans-serif;
 	text-align: justify;
 	text-transform: capitalize;
 	display: inline-flex;
@@ -172,7 +169,6 @@ nav a:hover
 {
 	font-size: 0.9em;
 	font-weight: bold;
-	font-family: raleway,sans-serif;
 	text-align: justify;
 	text-transform: capitalize;
 	display: inline-flex;
@@ -210,7 +206,6 @@ nav a:hover
 {
 	font-size: 0.9em;
 	font-weight: bold;
-	font-family: raleway,sans-serif;
 	text-align: justify;
 	text-transform: capitalize;
 	display: inline-flex;
@@ -248,7 +243,6 @@ nav a:hover
 {
 	font-size: 0.9em;
 	font-weight: bold;
-	font-family: raleway,sans-serif;
 	text-align: justify;
 	display: inline-flex;
 	padding: 8px;
@@ -293,71 +287,53 @@ border-bottom-left-radius:10px;
 .info p
 {
 	font-size: 0.6em;
-	font-family: Raleway, sans-serif;
 	margin-top: 2px;
 	margin-left: 5px;
 	margin-bottom: 10px;
 }
 
- .heber
- {
- 	position: relative;
- 
- }
-
-.heber h3
-{
-	
-	position: absolute;
-	left: 30px;
-	top:-5px;
-	margin-left: 10px;
-	font-size: 0.6em;
-	font-family: raleway, sans-serif;
-	
-}
-
- .plus{
- 	position: relative;
- } 
-
- .plus p
- {
-	font-size: 0.6em;
-	font-weight: bold;
-	font-family:raleway, sans-serif;
-	position: absolute;
-	left: -580px;
-	top:340px;
-	
-}
-
 section
 {
 	display: flex;
-	justify-content:flex-start;
-	align-items: space-around;
 
 }
+
+.heber h3
+{
+	font-weight: normal;
+	margin-left: 10px;
+	font-size: 0.6em;
+	
+}
+
+.plus p
+ {
+	font-size: 0.6em;
+	font-weight: bold;
+
+}
+
 .container
 {
-	background-color:#F2F2F2;
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap; 
+	background-color:#F2F2F2;
 	width: 600px;
-	height: 310px;
-	margin-left: 20px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	height: 300px;
+	margin: 0px 0px 0px 15px;
+	padding: 30px 0px 30px 0px;
 	border-radius:10px;
 	 
 }
 
-.bloc
+.heber .bloc
 {
-	display: flex;
-	width: 170px;
-	height: 130px;
+	display:flex;
+	justify-content: space-evenly;
+	width: 160px;
+	height: 120px;
 	margin:10px;
 	background-color: #fff;
 	border:3px solid #fff;
@@ -368,48 +344,48 @@ section
  .chambre1 img
 {
 display: inline-block;
-width: 169px;
-height:95px;
+width: 160px;
+height:90px;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;	
 }
 .chambre2 img
 {
 display: inline-block;
-width: 169px;
-height:95px;
+width: 160px;
+height:90px;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;	
 }
 .chambre3 img
 {
 display: inline-block;
-width: 169px;
-height:95px;
+width: 160px;
+height:90px;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 }
 .chambre4 img
 {
 display: inline-block;
-width: 169px;
-height:95px;
+width: 160px;
+height:90px;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 }
 .chambre5 img
 {
 	display: inline-block;
-width: 169px;
-height:95px;
+width: 160px;
+height:90px;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 }
 .chambre6 img
 {
 display: inline-block;
-width: 169px;
-height:95px;
+width: 160px;
+height:90px;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 }
@@ -418,7 +394,7 @@ border-top-right-radius: 10px;
 {
 	display: flex;
 	font-size: 0.7em;
-	font-family: raleway, sans-serif;
+	
 }
 .bloc h3
 {
@@ -426,7 +402,7 @@ border-top-right-radius: 10px;
 	margin-left: -165px;
 	padding-top:90px;
 	font-size: 0.7em;
-	font-family: raleway, sans-serif;
+	
 
 }
 
@@ -434,7 +410,6 @@ border-top-right-radius: 10px;
 {
 	display: flex;
 	font-size: 0.6em;
-	font-family: raleway, sans-serif;
 	padding-top: 105px;
 	margin-left: -60px
 }
@@ -460,15 +435,20 @@ border-top-right-radius: 10px;
 
 }
 
-aside
+.aside .container
 {
-	display: inline-flex;
-	justify-content
-	position: relative;
-	
-}
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-content: center;
+	width: 260px;
+	height: 330px;
+	padding: 30px 0px 0px 0px;
+	border-radius:10px;
+	background-color:#F2F2F2; 
+	}
 
-aside .container ul
+.container ul
 {
 	display: flex;
 	list-style-type:none;
@@ -476,18 +456,6 @@ aside .container ul
 	color:#0065FC; 
 	
 } 
-
-aside .container
-{
-	display: flex;
-	width: 260px;
-	height: 310px;
-	margin-left: 30px;
-	padding-top: 40px;
-	padding-bottom:20px;
-	border-radius:10px;
-	background-color:#F2F2F2; 
-	}
 
 aside .container .bloc_1 img
 {
@@ -514,7 +482,6 @@ aside .bloc_1
 aside .chambre7 h3
 {
 	font-size: 0.6em;
-	font-family: raleway, sans-serif;
 	position: absolute;
 	left:110px; 
 	top:-8px;
@@ -524,7 +491,6 @@ aside .chambre7 h3
 aside .chambre7 p
 {
 	font-size: 0.5em;
-	font-family: raleway, sans-serif;
 	position: absolute;
 	left: 110px;
 	top:20px;
@@ -542,7 +508,6 @@ aside .chambre7 .icone_star1 ul
 aside .chambre8 h3
 {
 	font-size: 0.6em;
-	font-family: raleway, sans-serif;
 	position: absolute;
 	left:110px;
 	top:-10px;
@@ -552,7 +517,6 @@ aside .chambre8 h3
 aside .chambre8 p
 {
 	font-size: 0.5em;
-	font-family: raleway, sans-serif;
 	position: absolute;
 	left:110px;
 	top:18px;
@@ -573,7 +537,6 @@ aside .chambre8 .icone_star1 span
 aside .chambre9 h3
 {
 	font-size: 0.6em;
-	font-family: raleway, sans-serif;
 	position: absolute;
 	left: 110px;
 	top:-10px;
@@ -582,7 +545,6 @@ aside .chambre9 h3
 aside .chambre9 p
 {
 	font-size: 0.5em;
-	font-family: raleway, sans-serif;
 	position: absolute;
 	left: 110px;
 	top:18px;
@@ -590,7 +552,6 @@ aside .chambre9 p
 
 aside .chambre9 .icone_star1 ul
 {
-	position: absolute;
 	left: 70px;
 	top:60px;
 	color:#0065FC;	
@@ -601,54 +562,82 @@ aside .chambre9 .icone_star1 span
 	color:#F2F2F2; 
 }
 
-#icone
+.aside .icon
 {
-	position: relative;
-	
+	display: flex;
+
 }
-#icone .icon h2
+
+.aside .icon h2
 {
 	font-size: 0.7em;
-	font-family: raleway, sans-serif;
-	position: absolute;
-	left:50px;
-	top: 0px;
 	z-index: 20;
 }
 
-#icone .icon i
+.aside .icon i
 {
-	position: absolute;
 	font-size: 0.8em;
-	left:270px;
-	top: 10px;
 	z-index: 20;
 }
 
-.activités
-{
-	position: relative;
-}
 .activites h2
 {
-	font-size:0.7em;
-	font-family:raleway, sans-serif;
-	position: absolute;
-	left: 65px;
+	font-size:0.6em;
+	
 }
 
 .container_2
 {
 	display: flex;
-	justify-content:flex-start;
-	width: 870px;
-	height: 300px;
-	margin-top: 40px;
-	margin-left: 20px;: 
+	width: 900px;
+	height: 350px;
 	border-radius:10px;
+	/* background-color:red; */
+}
+.container_2 .case1
+{
+	width: 450px;
+	height: 350px;
+	display: flex;
 	flex-wrap: wrap;
-	background-color:;
-	position: relative; 
+	justify-content: space-evenly;
+	/* background-color:green; */
+}
+.container_2 .case1 .sous-case1
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.container_2 .case1 .sous-case2
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.container_2 .case2
+{
+	width: 450px;
+	height: 350px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	/* background-color: blue; */
+}
+.container_2 .case2 .sous-case3
+{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container_2 .case2 .sous-case4
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 .container_2 .activités_1 img
@@ -667,19 +656,14 @@ aside .chambre9 .icone_star1 span
 	border-radius: 12px;
 	height:120px; 
 	width: 200px;
-	position: absolute;
 	right:0px;
 	top:0px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-	z-index: 5;
+	
 }
 .bloc_0 h3
 {
 	font-size: 0.8em;
-	font-family: raleway, sans-serif;
-	position: absolute;
-	left:10px;
-	top:90px;
 }
 
 .container_2 .activités_2 img
@@ -692,31 +676,25 @@ aside .chambre9 .icone_star1 span
 
 .bloc_2
 {
+
 	background-color: #fff;
 	border: 1px solid #fff;
 	border-radius: 10px;
 	height:100px; 
 	width:200px; 
-	position: absolute;
-	left: 230px;
-	top: 170px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-	z-index: 3;
+
 }
 
 .bloc_2 h3
 {
 	font-size: 0.8em;
-	font-family: raleway, sans-serif;
-	position: absolute;
-	left:10px;
-	top:70px;
 }
 
 .container_2 .activités_3 img
 {
 	width: 180px;
-	height: 230px;
+	height: 245px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
@@ -727,22 +705,15 @@ aside .chambre9 .icone_star1 span
 	border: 1px solid #fff;
 	border-style: none;
 	border-radius: 10px;
-	height: 270px; 
+	height: 290px; 
 	width: 180px;
-	position: absolute;
-	right:230px;
-	top: 0px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-	z-index: 3;
+	
 }
 
 .bloc_3 h3
 {
 	font-size: 0.6em;
-	font-family: raleway, sans-serif;
-	position: absolute;
-	left:10px;
-	top:230px;
 }
 
 .container_2 .activités_4 img
@@ -758,21 +729,13 @@ aside .chambre9 .icone_star1 span
 	background-color: #fff;
 	border: 1px solid #fff;
 	border-radius: 10px;
-	height:120px; 
+	height:132px; 
 	width: 200px;
-	position: absolute;
-	right: 0px;
-	top:150px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-	z-index: 4;
 }
 .bloc_4 h3
 {
 	font-size: 0.8em;
-	font-family: raleway, sans-serif;
-	position: absolute;
-	left:10px;
-	top: 90px;
 
 }
 
@@ -791,27 +754,20 @@ aside .chambre9 .icone_star1 span
 	border-radius: 10px;
 	height:150px; 
 	width: 200px;
-	position: absolute;
-	left:230px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-	z-index: 2;
+	
 	
 }
 
 .bloc_5 h3
 {
 	font-size: 0.6em;
-	font-family: raleway, sans-serif;
-	position:absolute;
-	left: 10px;
-	top:110px;
-	z-index: 1;
 }
 
 .container_2 .activités_6 img
 {
 	width: 180px;
-	height: 230px;
+	height: 245px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
@@ -821,10 +777,8 @@ aside .chambre9 .icone_star1 span
 	background-color: #fff;
 	border: 1px solid #fff;
 	border-style: none;
-	position: absolute;
-	left: 15px;
 	border-radius: 10px;
-	height: 270px; 
+	height: 290px; 
 	width: 180px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	
@@ -833,68 +787,33 @@ aside .chambre9 .icone_star1 span
 .bloc_6 h3
 {
 	font-size: 0.6em;
-	font-family: raleway, sans-serif;
-	position: absolute;
-	left:5px;
-	top:230px;
+
+}
+.footer 
+{
+	width:67%; 
+	height:20%;
+	background-color:#F2F2F2;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
 }
 
-footer
+.footer h2 	
 {
-	position: relative;
-	width:50%; 
-	height:100px;
-	background-color:#F2F2F2;
+	font-weight: bold;
+	font-size: 0.8em;
 	
 }
- .footer
-{
-	display: flex;
-	font-size:0.6em;
-	font-family:raleway, sans-serif;
 
-}
-
-.rubrique1 h2
+.footer ul	
 {
-	display: flex;
-	align-items: space-between;
-	justify-content: space-between;
-	position:absolute;
-	left: 20px;
-}
-.rubrique1 ul
-{
-	position: absolute;
-	left: -20px;
-	bottom: 15px;
-	list-style-type:none;
-	line-height: 1.5em;
-}
-.rubrique2 h2
-{
-	position: absolute;
-	left: 300px;
-}
-.rubrique2 ul
-{
-	position: absolute;
-	left:260px;
-	bottom: 30px;
-	list-style-type:none;
-	line-height: 1.5em;
+	font-size: 0.7em;
+	font-family: "raleway", time new roman, sans-serif;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
 }
 
-.rubrique3 h2
-{
-	position: absolute;
-	right: 200px;
-}
-.rubrique3 ul
-{
-	position:absolute;
-	right: 200px;
-	bottom:30px;
-	list-style-type:none;
-	line-height: 1.5em;	
-}
+
