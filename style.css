@@ -22,13 +22,13 @@ nav ul
 	list-style-type:none;
 	display: flex;
 	position: absolute;
-	left: 650px;	
+	left: 45%;	
 }
 
 nav li
 {
 	margin-left: 20px;
-	text-align: left;		
+	text-align: center;		
 }
 nav li .héberger
 {
@@ -42,7 +42,7 @@ nav li span a
 }
 nav a
 {
-	font-size: 0.8em;
+	font-size: 0.6em;
 	color: black;
 	padding-bottom: 0.5px;
 	text-decoration: none;
@@ -295,22 +295,26 @@ border-bottom-left-radius:10px;
 section
 {
 	display: flex;
-
+	position: relative;
 }
 
 .heber h3
 {
-	font-weight: normal;
+	font-weight: bold;
 	margin-left: 10px;
 	font-size: 0.6em;
-	
+	position: absolute;
+	top: 1%;
+	left: 2%;
 }
 
 .plus p
  {
 	font-size: 0.6em;
 	font-weight: bold;
-
+	position: absolute;
+	left: 2%;
+	top: 92%;
 }
 
 .container
@@ -339,55 +343,175 @@ section
 	border:3px solid #fff;
 	border-radius: 10px;
 	box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.5);
-
+	position: relative;
 }
  .chambre1 img
 {
-display: inline-block;
+display:;
 width: 160px;
 height:90px;
+object-fit: cover;
+object-fit: cover;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;	
 }
+.chambre1 h3
+{
+	position: absolute;
+	left: 0%;
+	top: 71%;
+}
+.chambre1 p
+{
+	position: absolute;
+	top: -7%;
+	left: 43%;
+}
+.chambre1 ul
+{
+	position: absolute;
+	top: -10%;
+	left: 102%;
+}
+
 .chambre2 img
 {
-display: inline-block;
+display:;
 width: 160px;
 height:90px;
+object-fit: cover;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;	
 }
+.chambre2 h3
+{
+	position: absolute;
+	left: 0%;
+	top: 71%;
+}
+.chambre2 p
+{
+	position: absolute;
+	top: -7%;
+	left: 43%;
+}
+.chambre2 ul
+{
+	position: absolute;
+	top: -10%;
+	left: 102%;
+}
+
 .chambre3 img
 {
-display: inline-block;
+display:;
 width: 160px;
 height:90px;
+object-fit: cover;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 }
+.chambre3 h3
+{
+	position: absolute;
+	left: 0%;
+	top: 71%;
+}
+.chambre3 p
+{
+	position: absolute;
+	top: -7%;
+	left: 43%;
+}
+.chambre3 ul
+{
+	position: absolute;
+	top: -10%;
+	left: 102%;
+}
+
 .chambre4 img
 {
-display: inline-block;
+display:;
 width: 160px;
 height:90px;
+object-fit: cover;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 }
+.chambre4 h3
+{
+	position: absolute;
+	left: 0%;
+	top: 71%;
+}
+.chambre4 p
+{
+	position: absolute;
+	top: -7%;
+	left: 43%;
+}
+.chambre4 ul
+{
+	position: absolute;
+	top: -10%;
+	left: 102%;
+}
+
 .chambre5 img
 {
-	display: inline-block;
+	display:;
 width: 160px;
 height:90px;
+object-fit: cover;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 }
+.chambre5 h3
+{
+	position: absolute;
+	left: 0%;
+	top: 71%;
+}
+.chambre5 p
+{
+	position: absolute;
+	top: -7%;
+	left: 43%;
+}
+.chambre5 ul
+{
+	position: absolute;
+	top: -10%;
+	left: 102%;
+}
+
 .chambre6 img
 {
-display: inline-block;
+display:;
 width: 160px;
 height:90px;
+object-fit: cover;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
+}
+.chambre6 h3
+{
+	position: absolute;
+	left: 0%;
+	top: 71%;
+}
+.chambre6 p
+{
+	position: absolute;
+	top: -7%;
+	left: 43%;
+}
+.chambre6 ul
+{
+	position: absolute;
+	top: -10%;
+	left: 102%;
 }
 
 .nom
@@ -399,11 +523,8 @@ border-top-right-radius: 10px;
 .bloc h3
 {
 	display: flex;
-	margin-left: -165px;
-	padding-top:90px;
-	font-size: 0.7em;
 	
-
+	font-size: 0.7em;
 }
 
  .bloc p 
@@ -420,13 +541,13 @@ border-top-right-radius: 10px;
 	padding-top: 118px;
 	margin-left: -195px;
 	list-style-type:none;
-	font-size:6px; 
+	font-size:0.4em; 
 	color:#0065FC; 
 
 }
  .icone_star span
 {
-	display: flex;
+
 	color:#F2F2F2;
 }	
 .etoile
@@ -461,6 +582,7 @@ aside .container .bloc_1 img
 {
 	width: 100px;
 	height: 78px;
+	object-fit: cover;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 	display: flex;
@@ -552,6 +674,7 @@ aside .chambre9 p
 
 aside .chambre9 .icone_star1 ul
 {
+	position: absolute;
 	left: 70px;
 	top:60px;
 	color:#0065FC;	
@@ -572,17 +695,26 @@ aside .chambre9 .icone_star1 span
 {
 	font-size: 0.7em;
 	z-index: 20;
+	position: absolute;
+	top: 0%;
+	left: 48%;
 }
 
 .aside .icon i
 {
 	font-size: 0.8em;
 	z-index: 20;
+	position: absolute;
+	top: 2%;
+	left: 65%
 }
 
 .activites h2
 {
-	font-size:0.6em;
+	font-size:0.8em;
+	position: absolute;
+	top: -2%;
+	left: 2%;
 	
 }
 
@@ -644,6 +776,7 @@ aside .chambre9 .icone_star1 span
 {
 	width: 200px;
 	height:90px;
+	object-fit: cover;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 	
@@ -659,17 +792,21 @@ aside .chambre9 .icone_star1 span
 	right:0px;
 	top:0px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-	
+	position: relative;
 }
 .bloc_0 h3
 {
-	font-size: 0.8em;
+	font-size: 0.7em;
+	position: absolute;
+	left: 5%;
+	top: 72%;
 }
 
 .container_2 .activités_2 img
 {
 	width: 200px;
 	height:70px;
+	object-fit: cover;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
@@ -683,18 +820,22 @@ aside .chambre9 .icone_star1 span
 	height:100px; 
 	width:200px; 
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-
+	position: relative;
 }
 
 .bloc_2 h3
 {
-	font-size: 0.8em;
+	font-size: 0.7em;
+	position: absolute;
+	left: 5%;
+	top: 60%;
 }
 
 .container_2 .activités_3 img
 {
 	width: 180px;
 	height: 245px;
+	object-fit: cover;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
@@ -708,18 +849,22 @@ aside .chambre9 .icone_star1 span
 	height: 290px; 
 	width: 180px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-	
+	position: relative;
 }
 
 .bloc_3 h3
 {
-	font-size: 0.6em;
+	font-size: 0.7em;
+	position: absolute;
+	left: 5%;
+	top: 85%;
 }
 
 .container_2 .activités_4 img
 {
 	width: 200px;
 	height:90px;
+	object-fit: cover;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
@@ -732,17 +877,21 @@ aside .chambre9 .icone_star1 span
 	height:132px; 
 	width: 200px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+	position: relative;
 }
 .bloc_4 h3
 {
-	font-size: 0.8em;
-
+	font-size: 0.7em;
+	position: absolute;
+	left: 5%;
+	top: 69%;
 }
 
 .container_2 .activités_5 img
 {
 	width: 200px;
 	height:110px;
+	object-fit: cover;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
@@ -755,19 +904,23 @@ aside .chambre9 .icone_star1 span
 	height:150px; 
 	width: 200px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-	
+	position: relative;
 	
 }
 
 .bloc_5 h3
 {
-	font-size: 0.6em;
+	font-size: 0.7em;
+	position: absolute;
+	left: 5%;
+	top: 74%;
 }
 
 .container_2 .activités_6 img
 {
 	width: 180px;
 	height: 245px;
+	object-fit: cover;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
@@ -781,12 +934,15 @@ aside .chambre9 .icone_star1 span
 	height: 290px; 
 	width: 180px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-	
+	position: relative;
 }
 
 .bloc_6 h3
 {
-	font-size: 0.6em;
+	font-size: 0.7em;
+	position: absolute;
+	left: 5%;
+	top: 87%;
 
 }
 .footer 
