@@ -1,13 +1,14 @@
 body
 {
-	margin:20px 50px 20px 50px;
+	margin:0px 0px 20px 0px;
 	font-family: 'Raleway', sans-serif;
 }
 
 header
 {
 	display: flex;
-	justify-content: space-between;
+	/*justify-content: space-evenly;*/
+	flex-wrap: wrap;
 	position: relative;
 
 }
@@ -15,14 +16,18 @@ header
 {
 	color: #0065FC;
 	width: 4em;
+	margin-left: 15px;
+	margin-top: 20px;
+	margin-right: 50px;
 }
 
 nav ul  
 {
-	list-style-type:none;
 	display: flex;
-	position: absolute;
-	left: 45%;	
+	list-style-type:none;
+	flex-wrap: wrap;
+	/*position: absolute;*/
+	margin-left: 450px;	
 }
 
 nav li
@@ -34,7 +39,7 @@ nav li .héberger
 {
 	color:#0065FC;
 	border-top: 1px solid #0065FC;
-	padding: 20px;
+	padding: 15px;
 }
 nav li span a
 {
@@ -51,8 +56,7 @@ nav a
 /* renseignement */	
 .renseignement
 {
-	font-size: 0.6em;
-	line-height: 3px;
+	font-size: 0.8em;
 	padding: 10px;
 	margin-left: 10px;
 }
@@ -128,7 +132,7 @@ nav a
 	border: 2px solid #F2F2F2; 
 	width: 10px;
 	height: 10px;
-	border-radius: 100%;
+	border-radius: 100px;
 }
 .box1 p
 {
@@ -165,7 +169,7 @@ nav a
 	border: 2px solid #F2F2F2; 
 	width: 10px;
 	height: 10px;
-	border-radius: 100%;
+	border-radius: 100px;
 }
 .box2 p
 {
@@ -202,7 +206,7 @@ nav a
 	border: 2px solid #F2F2F2; 
 	width: 10px;
 	height: 10px;
-	border-radius: 100%;	
+	border-radius: 100px;	
 }
 .box3 p
 {
@@ -239,7 +243,7 @@ nav a
 	border: 2px solid #F2F2F2; 
 	width: 10px;
 	height: 10px;
-	border-radius: 100%;
+	border-radius: 100px;
 }
 .box4 p
 {
@@ -281,7 +285,7 @@ border-bottom-left-radius:10px;
 	padding-left: 5px;
 	padding-right: 5px;
 	border:2px solid #F2F2F2;
-	border-radius: 100%;
+	border-radius: 100px;
 	
 
 }	
@@ -301,44 +305,52 @@ section
 	position: relative;
 }
 
-.heber h3
+.annonce h3
 {
 	font-weight: bold;
-	margin-left: 10px;
-	font-size: 0.6em;
-	/*position: absolute;*/
-	top: 1%;
-	left: 2%;
+	font-size: 0.8em;
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 40px;
 }
 
 .plus p
  {
-	font-size: 0.6em;
+	font-size: 0.8em;
 	font-weight: bold;
-	position: absolute;*/
-	left: 2%;
-	top: 92%;
+	position: absolute;
+	margin-top: -20px;
+	margin-left:30px;
 }
 
 .container
 {
 	display: flex;
 	justify-content: space-evenly;
-	align-items: center;
+	flex-direction: column;
 	flex-wrap: wrap; 
+	margin-left: 20px;
 	background-color:#F2F2F2;
-	 width: 600px; 
-	 height: 300px; 
-	margin: 0px 0px 0px 15px;
-	padding: 30px 0px 30px 0px;
+	margin: 30px 0px 0px 15px;
+	padding: 30px 0px 30px 10px;
 	border-radius:10px;
 	 
+}
+.row1{
+	display: flex;
+	flex-wrap: wrap;
+}
+.row2
+{
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .heber .bloc
 {
 	/* display:flex; */
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 	width: 160px;
 	height: 120px;
 	margin:10px;
@@ -361,20 +373,20 @@ border-top-right-radius: 10px;
 .chambre1 h3
 {
 	position: absolute;
-	left: 0%;
-	top: 71%;
+	left: 10px;
+	top: 85px;
 }
 .chambre1 p
 {
 	position: absolute;
-	top: -7%;
-	left: 43%;
+	top: -7px;
+	left: 70px;
 }
 .chambre1 ul
 {
 	position: absolute;
-	top: -10%;
-	left: 102%;
+	top: -10px;
+	left: 165px;
 }
 
 .chambre2 img
@@ -389,20 +401,20 @@ border-top-right-radius: 10px;
 .chambre2 h3
 {
 	position: absolute;
-	left: 0%;
-	top: 71%;
+	left: 10px;
+	top: 85px;
 }
 .chambre2 p
 {
 	position: absolute;
-	top: -7%;
-	left: 43%;
+	top: -7px;
+	left: 70px;
 }
 .chambre2 ul
 {
 	position: absolute;
-	top: -10%;
-	left: 102%;
+	top: -10px;
+	left: 165px;
 }
 
 .chambre3 img
@@ -417,20 +429,20 @@ border-top-right-radius: 10px;
 .chambre3 h3
 {
 	position: absolute;
-	left: 0%;
-	top: 71%;
+	left: 10px;
+	top: 85px;
 }
 .chambre3 p
 {
 	position: absolute;
-	top: -7%;
-	left: 43%;
+	top: -7px;
+	left: 70px;
 }
 .chambre3 ul
 {
 	position: absolute;
-	top: -10%;
-	left: 102%;
+	top: -10px;
+	left: 165px;
 }
 
 .chambre4 img
@@ -445,20 +457,20 @@ border-top-right-radius: 10px;
 .chambre4 h3
 {
 	position: absolute;
-	left: 0%;
-	top: 71%;
+	left: 10px;
+	top: 85px;
 }
 .chambre4 p
 {
 	position: absolute;
 	top: -7%;
-	left: 43%;
+	left: 70px;
 }
 .chambre4 ul
 {
 	position: absolute;
-	top: -10%;
-	left: 102%;
+	top: -10px;
+	left: 165px;
 }
 
 .chambre5 img
@@ -473,20 +485,20 @@ border-top-right-radius: 10px;
 .chambre5 h3
 {
 	position: absolute;
-	left: 0%;
-	top: 71%;
+	left: 10px;
+	top: 85px;
 }
 .chambre5 p
 {
 	position: absolute;
-	top: -7%;
-	left: 43%;
+	top: -7px;
+	left: 70px;
 }
 .chambre5 ul
 {
 	position: absolute;
-	top: -10%;
-	left: 102%;
+	top: -10px;
+	left: 165px;
 }
 
 .chambre6 img
@@ -501,20 +513,20 @@ border-top-right-radius: 10px;
 .chambre6 h3
 {
 	position: absolute;
-	left: 0%;
-	top: 71%;
+	left: 10px;
+	top: 85px;
 }
 .chambre6 p
 {
 	position: absolute;
-	top: -7%;
-	left: 43%;
+	top: -7px;
+	left: 70px;
 }
 .chambre6 ul
 {
 	position: absolute;
-	top: -10%;
-	left: 102%;
+	top: -10px;
+	left: 165px;
 }
 
 .nom
@@ -566,8 +578,8 @@ border-top-right-radius: 10px;
 	flex-direction: column;
 	align-content: center;
 	width: 260px;
-	height: 330px;
-	padding: 30px 0px 0px 0px;
+	height: 350px;
+	padding: 0px 0px 0px 0px;
 	border-radius:10px;
 	background-color:#F2F2F2;
 	position: relative; 
@@ -689,52 +701,55 @@ aside .chambre9 .icone_star1 span
 	color:#F2F2F2; 
 }
 
-.aside .icon
+.icon
 {
 	display: flex;
-
+	justify-content: space-around;
 }
 
 .aside .icon h2
 {
-	font-size: 0.7em;
+	font-size: 0.8em;
+	margin-left: -5px;
+	margin-right: 100px;
 	z-index: 20;
-	position: absolute;
-	top: 5px;
-	left: 650px;
+	/*position: absolute;*/
+	
 }
 
 .aside .icon i
 {
+	padding-top:10px;
 	font-size: 0.8em;
 	z-index: 20;
-	position: absolute;
-	top: 15px;
-	left: 750px;
+	/*position: absolute;*/
+	
 }
 
 .activites h2
 {
 	font-size:0.8em;
 	/*position: absolute;*/
-	top: -2%;
-	left: 2%;
+	margin-left: 30px;
+	margin-top: 20px;
+	
 	
 }
 
 .container_2
 {
 	display: flex;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
-	width: 900px;
-	height: 350px;
 	border-radius:10px;
-	/* background-color:red; */
+	margin-left: 20px;
+	 /*background-color:red;*/
 }
 .container_2 .case1
 {
-	width: 450px;
-	height: 350px;
+	
+	padding-right:30px;
+	margin-bottom: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -743,6 +758,8 @@ aside .chambre9 .icone_star1 span
 .container_2 .case1 .sous-case1
 {
 	display: flex;
+	flex-wrap: wrap;
+	margin-right: 30px;
 	justify-content: center;
 	align-items: center;
 	
@@ -750,14 +767,15 @@ aside .chambre9 .icone_star1 span
 .container_2 .case1 .sous-case2
 {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
 .container_2 .case2
 {
-	width: 450px;
-	height: 350px;
+	
+	margin-bottom:20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -765,16 +783,18 @@ aside .chambre9 .icone_star1 span
 }
 .container_2 .case2 .sous-case3
 {
-
+	margin-right: 30px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
 .container_2 .case2 .sous-case4
 {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
 .container_2 .activités_1 img
@@ -794,8 +814,7 @@ aside .chambre9 .icone_star1 span
 	border-radius: 12px;
 	height:120px; 
 	width: 200px;
-	right:0px;
-	top:0px;
+	margin-bottom: 30px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	position: relative;
 }
@@ -803,8 +822,8 @@ aside .chambre9 .icone_star1 span
 {
 	font-size: 0.7em;
 	position: absolute;
-	left: 5%;
-	top: 72%;
+	left: 10px;
+	top: 85px;
 }
 
 .container_2 .activités_2 img
@@ -824,6 +843,7 @@ aside .chambre9 .icone_star1 span
 	border-radius: 10px;
 	height:100px; 
 	width:200px; 
+	margin-bottom: 30px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	position: relative;
 }
@@ -832,8 +852,8 @@ aside .chambre9 .icone_star1 span
 {
 	font-size: 0.7em;
 	position: absolute;
-	left: 5%;
-	top: 60%;
+	left: 10px;
+	top: 65px;
 }
 
 .container_2 .activités_3 img
@@ -853,6 +873,7 @@ aside .chambre9 .icone_star1 span
 	border-radius: 10px;
 	height: 290px; 
 	width: 180px;
+	margin-bottom: 30px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	position: relative;
 }
@@ -861,8 +882,8 @@ aside .chambre9 .icone_star1 span
 {
 	font-size: 0.7em;
 	position: absolute;
-	left: 5%;
-	top: 85%;
+	left: 10px;
+	top: 250px;
 }
 
 .container_2 .activités_4 img
@@ -881,6 +902,7 @@ aside .chambre9 .icone_star1 span
 	border-radius: 10px;
 	height:132px; 
 	width: 200px;
+	margin-bottom: 30px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	position: relative;
 }
@@ -888,8 +910,8 @@ aside .chambre9 .icone_star1 span
 {
 	font-size: 0.7em;
 	position: absolute;
-	left: 5%;
-	top: 69%;
+	left: 10px;
+	top: 85px;
 }
 
 .container_2 .activités_5 img
@@ -908,6 +930,7 @@ aside .chambre9 .icone_star1 span
 	border-radius: 10px;
 	height:150px; 
 	width: 200px;
+	margin-bottom: 30px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	position: relative;
 	
@@ -917,8 +940,8 @@ aside .chambre9 .icone_star1 span
 {
 	font-size: 0.7em;
 	position: absolute;
-	left: 5%;
-	top: 74%;
+	left: 10px;
+	top: 110px;
 }
 
 .container_2 .activités_6 img
@@ -938,6 +961,7 @@ aside .chambre9 .icone_star1 span
 	border-radius: 10px;
 	height: 290px; 
 	width: 180px;
+	margin-bottom: 30px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	position: relative;
 }
@@ -946,14 +970,14 @@ aside .chambre9 .icone_star1 span
 {
 	font-size: 0.7em;
 	position: absolute;
-	left: 5%;
-	top: 87%;
+	left: 10px;
+	top: 250px;
 
 }
 .footer 
 {
-	width:67%; 
-	height:20%;
+	width:910px; 
+	height:100px;
 	background-color:#F2F2F2;
 	display: flex;
 	justify-content: space-around;
@@ -976,5 +1000,28 @@ aside .chambre9 .icone_star1 span
 	margin: 0px;
 	padding: 0px;
 }
+
+@media screen and(max-width: 375px)
+{
+	
+}
+
+@media all  and (max-width: 824px){
+
+ 	nav ul 
+ 	{
+ 		margin-top: 0px;
+ 	}
+ 	.héberger
+ 	{
+ 		color: #0065FC;
+ 		padding-bottom: 10px;
+ 		border-top: 0px;
+ 		/*border-bottom: 1px solid #0065FC;*/
+ 	} 
+ 	section
+ 	
+ } 
+	
 
 
