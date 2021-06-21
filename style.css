@@ -6,6 +6,7 @@ body
 }
 .site{
 	display: flex;
+	/*flex-wrap: wrap;**/
 	font-size: 1.5em;
 	margin-top: 40px;
 	padding-top: 40px;
@@ -15,6 +16,7 @@ body
 .tete_de_page{
 	display: flex;
 	justify-content: flex-end;
+	flex-wrap: wrap;
 }
 
 
@@ -1063,15 +1065,16 @@ aside .chambre9 .icone_star1 span
 
 
 
-@media screen and(max-width: 768px){
+@media screen and(max-width: 768px)
+{
 
- 	body{
+ 	
+	body{
  		max-width: 768px;
  		width: 100%;
  		margin: 0px;
- 	}
-
-
+  	}
+ 	
 
 
 
@@ -1081,42 +1084,197 @@ aside .chambre9 .icone_star1 span
     /*flex-wrap: wrap-reverse;**/
    	}
 
- 	aside {
+	aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 37px;
     width: 100%;
-    padding-right: 10px;
+    padding-left: 20px;
     order: 1;
 	}
+	.aside .container{
+	padding-left:0px;
+	/*width: 470px;**/
+	/*height: 570px;**/
+	padding: 0px 0px 0px 0px;
+	border-radius:10px;
+	background-color:#F2F2F2;
+	}
 
-.heber{
+	.heber{
 	order: 2;
-}
+	}
+	
+	.heber .container{
+		background-color: white;
+		padding-left: 0px;
+	}
+
+	.activites h2{
+		padding-left: 0px;
+		padding-bottom: 10px;
+	}
+
+	.activites .container_2{
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	.case1{
+		display: flex;
+		flex-direction: column;
+	}
+	.sous-case2{
+		marging-left:0px;
+	}
 
 
-.activites{
-	width: 100%;	
-}
+	.sous-case1 .bloc_6
+ 	{
+ 	width: 220px;
+	height: 150px;
+	/*margin-left: -70px;**/
+	background-color: #fff;
+	border:3px solid #fff;
+	border-radius: 10px;
+	position: relative;
+ 	}
+ 	.sous-case1 .bloc_6 img
+ 	{
+ 	width: 220px;
+	height:100px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;	
+ 	}
+ 	.sous-case1 .bloc_6 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 100px;
+ 	}
+ 	.sous-case2 .bloc_5{
+ 	width: 220px;
+	height: 150px;
+	/*margin-left: -65px;**/
+	margin-bottom: 30px;
+	background-color: #fff;
+	border:3px solid #fff;
+	border-radius: 10px;
+	position: relative;
+ 	}
+ 	.sous-case2 .bloc_5 img{
+ 	width: 220px;
+	height:100px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;	
+ 	}
+ 	.sous-case2 .bloc_5 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 100px;
+ 	}
+ 	.sous-case2 .bloc_2{
+ 	width: 220px;
+	height: 150px;
+	/*margin-left: -65px;**/
+	background-color: #fff;
+	border:3px solid #fff;
+	border-radius: 10px;
+	position: relative;
+ 	}
+ 	.sous-case2 .bloc_2 img{
+ 	width: 220px;
+	height:100px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;	
+ 	}
+ 	.sous-case2 .bloc_2 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 100px;
+ 	}
+ 	.case2{
+		display: flex;
+		flex-direction: column;
+	}
+	.sous-case4{
+		marging-left:0px;
+	}
+	.sous-case3 .bloc_3{
+ 	width: 220px;
+	height: 150px;
+	/*margin-left: -70px;**/
+	background-color: #fff;
+	border:3px solid #fff;
+	border-radius: 10px;
+	position: relative;
+ 	}
+ 	.sous-case3 .bloc_3 img
+ 	{
+ 	width: 220px;
+	height:100px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;	
+ 	}
+ 	.sous-case3 .bloc_3 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 100px;
+ 	}
+ 	.sous-case4 .bloc_0{
+ 	width: 220px;
+	height: 150px;
+	/*margin-left: -70px;**/
+	background-color: #fff;
+	border:3px solid #fff;
+	border-radius: 10px;
+	position: relative;
+ 	}
+ 	.sous-case4 .bloc_0 img
+ 	{
+ 	width: 220px;
+	height:100px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;	
+ 	}
+ 	.sous-case4 .bloc_0 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 100px;
+ 	}
+ 	.sous-case4 .bloc_4{
+ 	width: 220px;
+	height: 150px;
+	/*margin-left: -70px;**/
+	background-color: #fff;
+	border:3px solid #fff;
+	border-radius: 10px;
+	position: relative;
+ 	}
+ 	.sous-case4 .bloc_4 img
+ 	{
+ 	width: 220px;
+	height:100px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;	
+ 	}
+ 	.sous-case4 .bloc_4 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 100px;
+ 	}
 
-
-.footer{
+	.footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-}
+	}
 
-.rubrique1,
-.rubrique2,
-.rubrique3{
+	.rubrique1,
+	.rubrique2,
+	.rubrique3{
 	padding-left: 0px;
 	width: 100%;
-}
+	}
 
 
 }
-	
-
-@media screen and(min-width: 769px) and (max-width: 1269px)
-
