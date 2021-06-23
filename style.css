@@ -15,7 +15,7 @@
 
 .site{
 	display: flex;
-	justify-content: flex-end;
+	/*justify-content: flex-end;**/
 	flex-wrap: wrap;
 }
 
@@ -92,7 +92,7 @@
 
 }
 
-.search input
+.search button span, .search button i
 {
 	background-color:#0065FC;
 	color: white; 
@@ -101,6 +101,13 @@
 	border-style:none;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
+}
+.search button{
+	border-style: none;
+	background-color: transparent;
+}
+.search button i{
+	display: none;
 }
 .ville input
 {
@@ -786,7 +793,7 @@ aside .chambre9 .icone_star1 span
 	flex-wrap: wrap;
 	border-radius:10px;
 	margin-left: 0px;
-	 /*background-color:red;**/
+	/*background-color:red;**/
 }
 .container_2 .case1
 {
@@ -1089,6 +1096,12 @@ aside .chambre9 .icone_star1 span
 
   		order: 1;
   	}
+  	.search button i{
+	display: block;
+	}
+	.search button span{
+	display: none;
+}
 
  	section{
     display: flex;
@@ -1134,76 +1147,74 @@ aside .chambre9 .icone_star1 span
 	object-fit: cover;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
+		}
+	aside .chambre7 h3
+	{
+		font-size: 0.7em;
+		position: absolute;
+		left:100px; 
+		top:-8px;
+		z-index: 20;
 	}
-aside .chambre7 h3
-{
-	font-size: 0.7em;
-	position: absolute;
-	left:100px; 
-	top:-8px;
-	z-index: 20;
-}
 
-aside .chambre7 p
-{
-	position: absolute;
-	left: 100px;
-	top:35px;
-	
-}
+	aside .chambre7 p
+	{
+		position: absolute;
+		left: 100px;
+		top:35px;
+		
+	}
 
-aside .chambre7 .icone_star1 ul
-{
-	position: absolute;
-	left: 60px;
-	top: 80px;
-}
-aside .chambre8 h3
-{
-	font-size: 0.7em;
-	position: absolute;
-	left:100px; 
-	top:-8px;
-	z-index: 20;
-}
+	aside .chambre7 .icone_star1 ul
+	{
+		position: absolute;
+		left: 60px;
+		top: 80px;
+	}
+	aside .chambre8 h3
+	{
+		font-size: 0.7em;
+		position: absolute;
+		left:100px; 
+		top:-8px;
+		z-index: 20;
+	}
 
-aside .chambre8 p
-{
-	position: absolute;
-	left: 100px;
-	top:35px;
-	
-}
+	aside .chambre8 p{
+		position: absolute;
+		left: 100px;
+		top:35px;
+	}
 
-aside .chambre8 .icone_star1 ul
-{
-	position: absolute;
-	left: 60px;
-	top: 80px;
-}
-aside .chambre9 h3
-{
-	font-size: 0.7em;
-	position: absolute;
-	left:100px; 
-	top:-8px;
-	z-index: 20;
-}
+	aside .chambre8 .icone_star1 ul
+	{
+		position: absolute;
+		left: 60px;
+		top: 80px;
+	}
+	aside .chambre9 h3
+	{
+		font-size: 0.7em;
+		position: absolute;
+		left:100px; 
+		top:-8px;
+		z-index: 20;
+	}
 
-aside .chambre9 p
-{
-	position: absolute;
-	left: 100px;
-	top:35px;
-	
-}
+	aside .chambre9 p
+	{
+		position: absolute;
+		left: 100px;
+		top:35px;
+		
+	}
 
-aside .chambre9 .icone_star1 ul
-{
-	position: absolute;
-	left: 60px;
-	top: 80px;
-}
+	aside .chambre9 .icone_star1 ul
+	{
+		position: absolute;
+		left: 60px;
+		top: 80px;
+	}
 
 	.heber{
 	order: 2;
@@ -1219,14 +1230,22 @@ aside .chambre9 .icone_star1 ul
 		padding-bottom: 10px;
 	}
 
-	.activites .container_2{
-		marging-left:0px ;
-		padding-left: 0px;
+	.container_2{
+		
+		display: flex;
+		justify-content: flex-start;
 	}
 	.case1, .case2{
 		display: flex;
 		flex-direction: column;
 		padding-left:0px;
+		margin-right: 0px;
+	}
+	.container_2 .case1 .sous-case1{
+		margin-right: 0px;
+	}
+
+	.container_2 .case2 .sous-case3{
 		margin-right: 0px;
 	}
 	.sous-case1, .sous-case3{
@@ -1237,18 +1256,12 @@ aside .chambre9 .icone_star1 ul
  	{
  	width: 220px;
 	height: 150px;
-	/*margin-left: -70px;**/
-	background-color: #fff;
-	border:3px solid #fff;
-	border-radius: 10px;
 	position: relative;
  	}
  	.sous-case1 .bloc_6 img
  	{
  	width: 220px;
-	height:100px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;	
+	height:100px;	
  	}
  	.sous-case1 .bloc_6 h3{
  		position: absolute;
@@ -1258,18 +1271,11 @@ aside .chambre9 .icone_star1 ul
  	.sous-case2 .bloc_5{
  	width: 220px;
 	height: 150px;
-	/*margin-left: -65px;**/
-	margin-bottom: 30px;
-	background-color: #fff;
-	border:3px solid #fff;
-	border-radius: 10px;
 	position: relative;
  	}
  	.sous-case2 .bloc_5 img{
  	width: 220px;
 	height:100px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;	
  	}
  	.sous-case2 .bloc_5 h3{
  		position: absolute;
@@ -1279,10 +1285,6 @@ aside .chambre9 .icone_star1 ul
  	.sous-case2 .bloc_2{
  	width: 220px;
 	height: 150px;
-	/*margin-left: -65px;**/
-	background-color: #fff;
-	border:3px solid #fff;
-	border-radius: 10px;
 	position: relative;
  	}
  	.sous-case2 .bloc_2 img{
@@ -1308,18 +1310,12 @@ aside .chambre9 .icone_star1 ul
 	.sous-case3 .bloc_3{
  	width: 220px;
 	height: 150px;
-	/*margin-left: -70px;**/
-	background-color: #fff;
-	border:3px solid #fff;
-	border-radius: 10px;
 	position: relative;
  	}
  	.sous-case3 .bloc_3 img
  	{
  	width: 220px;
-	height:100px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;	
+	height:100px;	
  	}
  	.sous-case3 .bloc_3 h3{
  		position: absolute;
@@ -1329,18 +1325,12 @@ aside .chambre9 .icone_star1 ul
  	.sous-case4 .bloc_0{
  	width: 220px;
 	height: 150px;
-	/*margin-left: -70px;**/
-	background-color: #fff;
-	border:3px solid #fff;
-	border-radius: 10px;
 	position: relative;
  	}
  	.sous-case4 .bloc_0 img
  	{
  	width: 220px;
 	height:100px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;	
  	}
  	.sous-case4 .bloc_0 h3{
  		position: absolute;
@@ -1350,10 +1340,6 @@ aside .chambre9 .icone_star1 ul
  	.sous-case4 .bloc_4{
  	width: 220px;
 	height: 150px;
-	/*margin-left: -70px;**/
-	background-color: #fff;
-	border:3px solid #fff;
-	border-radius: 10px;
 	position: relative;
  	}
  	.sous-case4 .bloc_4 img
@@ -1373,14 +1359,320 @@ aside .chambre9 .icone_star1 ul
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	
 	}
 
 	.rubrique1,
 	.rubrique2,
 	.rubrique3{
 	padding-left: 0px;
-	width: 100%;
+	/*width: 100%;**/
+	}
+}
+
+/*iphone 8 **/
+
+@media(max-width: 375px){
+
+	.bloc_page{
+ 		max-width: 375px;
+ 		width: 100%;
+ 		margin-left: 0px;
+  	}
+ 	
+  	.tete_de_page{
+  		display: flex;
+  		flex-wrap: wrap;
+  	}
+  	.nav{
+  		justify-content: center;
+  		align-items: flex-end;
+  		justify-self: end;
+  		/*order: 2;**/
+  	}
+  	.inscription{
+
+  		order: 1;
+  	}
+  	.search button i{
+	display: block;
+	}
+	.search button span{
+	display: none;
+}
+
+ 	section{
+    display: flex;
+    justify-content: space-between;
+   	}
+
+.aside .icon h2{
+	font-size: 0.9em;
+}
+.aside .icon i{
+	font-size: 0.9em;
+}
+	aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 37px;
+    width: 100%;
+    padding-left: 0px;
+    order: 1;
+	}
+	.aside .container{
+	padding-left:0px;
+	width: 350px;
+	height: 450px;
+	padding: 0px 0px 0px 0px;
+	border-radius:10px;
+	background-color:#F2F2F2;
+	}
+	aside .bloc_1{
+	background-color: #fff;
+	border:3px solid #fff;
+	border-radius:10px;
+	margin: 5px;
+	height: 100px; 
+	width: 300px;
+	position: relative;
 	}
 
+	aside .container .bloc_1 img{
+	width: 150px;
+	height: 100px;
+	object-fit: cover;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+		}
+	aside .chambre7 h3
+	{
+		font-size: 0.7em;
+		position: absolute;
+		left:170px; 
+		top:-8px;
+		z-index: 20;
+	}
 
+	aside .chambre7 p
+	{
+		position: absolute;
+		left: 170px;
+		top:35px;
+		
+	}
+
+	aside .chambre7 .icone_star1 ul
+	{
+		position: absolute;
+		left: 130px;
+		top: 70px;
+	}
+	aside .chambre8 h3
+	{
+		font-size: 0.7em;
+		position: absolute;
+		left:170px; 
+		top:-8px;
+		z-index: 20;
+	}
+
+	aside .chambre8 p
+	{
+		position: absolute;
+		left: 170px;
+		top:35px;
+		
+	}
+
+	aside .chambre8 .icone_star1 ul
+	{
+		position: absolute;
+		left: 130px;
+		top: 70px;
+	}
+	aside .chambre9 h3
+	{
+		font-size: 0.7em;
+		position: absolute;
+		left:170px; 
+		top:-8px;
+		z-index: 20;
+	}
+
+	aside .chambre9 p
+	{
+		position: absolute;
+		left: 170px;
+		top:35px;
+		
+	}
+
+	aside .chambre9 .icone_star1 ul
+	{
+		position: absolute;
+		left: 130px;
+		top: 70px;
+	}
+
+	.heber{
+	order: 2;
+	}
+
+	.heber .container{
+		background-color: white;
+		padding-left: 0px;
+	}
+
+	.heber .bloc{
+	width: 300px;
+	}
+	.chambre1 img,
+	.chambre2 img, 
+	.chambre3 img,
+	.chambre4 img, 
+	.chambre5 img, 
+	.chambre6 img{
+	width: 300px;
+	height:100px;
+	}
+	
+
+	.activites h2{
+		padding-left: 0px;
+		padding-bottom: 10px;
+	}
+
+	.container_2{
+		display: flex;
+		justify-content: flex-start;
+	}
+	.case1, .case2{
+		display: flex;
+		flex-direction: column;
+		padding-left:0px;
+		margin-right: 0px;
+	}
+	.container_2 .case1 .sous-case1{
+		margin-right: 0px;
+	}
+
+	.container_2 .case2 .sous-case3{
+		margin-right: 0px;
+	}
+	.sous-case1, .sous-case3{
+		margin-right: 0px;
+	}
+	
+	.sous-case1 .bloc_6{
+ 	width: 300px;
+	height: 180px;
+	position: relative;
+ 	}
+ 	.sous-case1 .bloc_6 img{
+ 	width: 300px;
+	height:130px;
+ 	}
+ 	.sous-case1 .bloc_6 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 130px;
+ 	}
+ 	.sous-case2 .bloc_5{
+ 	width: 300px;
+	height: 180px;
+	position: relative;
+ 	}
+ 	.sous-case2 .bloc_5 img{
+ 	width: 300px;
+	height:130px;
+ 	}
+ 	.sous-case2 .bloc_5 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 130px;
+ 	}
+ 	.sous-case2 .bloc_2{
+ 	width: 300px;
+	height: 180px;
+	position: relative;
+ 	}
+ 	.sous-case2 .bloc_2 img{
+ 	width: 300px;
+	height:130px;
+ 	}
+ 	.sous-case2 .bloc_2 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 130px;
+ 	}
+ 			
+	.sous-case4{
+		marging-left:0px;
+		padding-left: 0px;
+	}
+	.sous-case3{
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	.sous-case3 .bloc_3{
+ 	width: 300px;
+	height: 180px;
+	position: relative;
+ 	}
+ 	.sous-case3 .bloc_3 img
+ 	{
+ 	width: 300px;
+	height:130px;
+ 	}
+ 	.sous-case3 .bloc_3 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 130px;
+ 	}
+ 	.sous-case4 .bloc_0{
+ 	width: 300px;
+	height: 180px;
+	position: relative;
+ 	}
+ 	.sous-case4 .bloc_0 img
+ 	{
+ 	width: 300px;
+	height:130px;
+ 	}
+ 	.sous-case4 .bloc_0 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 130px;
+ 	}
+ 	.sous-case4 .bloc_4{
+ 	width: 300px;
+	height: 180px;
+	position: relative;
+ 	}
+ 	.sous-case4 .bloc_4 img
+ 	{
+ 	width: 300px;
+	height:130px;
+ 	}
+ 	.sous-case4 .bloc_4 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 130px;
+ 	}
+
+	.footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+	}
+
+	.rubrique1,
+	.rubrique2,
+	.rubrique3{
+	padding-left: 0px;
+	/*width: 100%;**/
+	}
 }
