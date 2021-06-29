@@ -15,7 +15,7 @@
 
 .site{
 	display: flex;
-	justify-content: flex-end;
+	/*justify-content: flex-end;**/
 	flex-wrap: wrap;
 }
 
@@ -92,7 +92,7 @@
 
 }
 
-.search input
+.search button span, .search button i
 {
 	background-color:#0065FC;
 	color: white; 
@@ -101,6 +101,13 @@
 	border-style:none;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
+}
+.search button{
+	border-style: none;
+	background-color: transparent;
+}
+.search button i{
+	display: none;
 }
 .ville input
 {
@@ -786,7 +793,7 @@ aside .chambre9 .icone_star1 span
 	flex-wrap: wrap;
 	border-radius:10px;
 	margin-left: 0px;
-	 /*background-color:red;**/
+	/*background-color:red;**/
 }
 .container_2 .case1
 {
@@ -1039,6 +1046,7 @@ aside .chambre9 .icone_star1 span
 .footer 
 {
 	padding-top: 20px;
+	padding-left: 20px;
 	padding-bottom: 20px;
 	background-color:#F2F2F2;
 	display: flex;
@@ -1050,13 +1058,13 @@ aside .chambre9 .icone_star1 span
 .footer h2 	
 {
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 1.1em;
 	
 }
 
 .footer ul	
 {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	font-family: "raleway", time new roman, sans-serif;
 	list-style-type: none;
 	margin: 0px;
@@ -1067,28 +1075,36 @@ aside .chambre9 .icone_star1 span
 
 @media(max-width: 768px)
 {
-
- 	
-	.bloc_page{
+ 	.bloc_page{
  		max-width: 768px;
  		width: 100%;
  		margin-left: 0px;
   	}
- 	
-  	.tete_de_page{
-  		display: flex;
-  		flex-wrap: wrap;
+  	body{
+  		margin: 0px;
   	}
-  	.nav{
-  		justify-content: center;
-  		align-items: flex-end;
-  		justify-self: end;
-  		/*order: 2;**/
+ 	.tete_de_page{
+ 		font-size: 1em;
+  		display: flex;
+  		align-items: flex-start;
+  	}
+  	.nav {
+  		align-self: flex-end;
   	}
   	.inscription{
-
-  		order: 1;
+  		display: block;
+  		justify-content: flex-end;
+  		align-items: flex-end;
+  		align-self: flex-start;
+  		
   	}
+ 	
+   	.search button i{
+	display: block;
+	}
+	.search button span{
+	display: none;
+}
 
  	section{
     display: flex;
@@ -1121,7 +1137,7 @@ aside .chambre9 .icone_star1 span
 	aside .bloc_1{
 	background-color: #fff;
 	border:3px solid #fff;
-	border-radius: 10px;
+	border-radius:10px;
 	margin: 5px;
 	height: 100px; 
 	width: 200px;
@@ -1134,76 +1150,74 @@ aside .chambre9 .icone_star1 span
 	object-fit: cover;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
+		}
+	aside .chambre7 h3
+	{
+		font-size: 0.7em;
+		position: absolute;
+		left:100px; 
+		top:-8px;
+		z-index: 20;
 	}
-aside .chambre7 h3
-{
-	font-size: 0.7em;
-	position: absolute;
-	left:100px; 
-	top:-8px;
-	z-index: 20;
-}
 
-aside .chambre7 p
-{
-	position: absolute;
-	left: 100px;
-	top:35px;
-	
-}
+	aside .chambre7 p
+	{
+		position: absolute;
+		left: 100px;
+		top:35px;
+		
+	}
 
-aside .chambre7 .icone_star1 ul
-{
-	position: absolute;
-	left: 60px;
-	top: 80px;
-}
-aside .chambre8 h3
-{
-	font-size: 0.7em;
-	position: absolute;
-	left:100px; 
-	top:-8px;
-	z-index: 20;
-}
+	aside .chambre7 .icone_star1 ul
+	{
+		position: absolute;
+		left: 60px;
+		top: 80px;
+	}
+	aside .chambre8 h3
+	{
+		font-size: 0.7em;
+		position: absolute;
+		left:100px; 
+		top:-8px;
+		z-index: 20;
+	}
 
-aside .chambre8 p
-{
-	position: absolute;
-	left: 100px;
-	top:35px;
-	
-}
+	aside .chambre8 p{
+		position: absolute;
+		left: 100px;
+		top:35px;
+	}
 
-aside .chambre8 .icone_star1 ul
-{
-	position: absolute;
-	left: 60px;
-	top: 80px;
-}
-aside .chambre9 h3
-{
-	font-size: 0.7em;
-	position: absolute;
-	left:100px; 
-	top:-8px;
-	z-index: 20;
-}
+	aside .chambre8 .icone_star1 ul
+	{
+		position: absolute;
+		left: 60px;
+		top: 80px;
+	}
+	aside .chambre9 h3
+	{
+		font-size: 0.7em;
+		position: absolute;
+		left:100px; 
+		top:-8px;
+		z-index: 20;
+	}
 
-aside .chambre9 p
-{
-	position: absolute;
-	left: 100px;
-	top:35px;
-	
-}
+	aside .chambre9 p
+	{
+		position: absolute;
+		left: 100px;
+		top:35px;
+		
+	}
 
-aside .chambre9 .icone_star1 ul
-{
-	position: absolute;
-	left: 60px;
-	top: 80px;
-}
+	aside .chambre9 .icone_star1 ul
+	{
+		position: absolute;
+		left: 60px;
+		top: 80px;
+	}
 
 	.heber{
 	order: 2;
@@ -1219,14 +1233,22 @@ aside .chambre9 .icone_star1 ul
 		padding-bottom: 10px;
 	}
 
-	.activites .container_2{
-		marging-left:0px ;
-		padding-left: 0px;
+	.container_2{
+		
+		display: flex;
+		justify-content: flex-start;
 	}
 	.case1, .case2{
 		display: flex;
 		flex-direction: column;
 		padding-left:0px;
+		margin-right: 0px;
+	}
+	.container_2 .case1 .sous-case1{
+		margin-right: 0px;
+	}
+	
+	.container_2 .case2 .sous-case3{
 		margin-right: 0px;
 	}
 	.sous-case1, .sous-case3{
@@ -1237,18 +1259,12 @@ aside .chambre9 .icone_star1 ul
  	{
  	width: 220px;
 	height: 150px;
-	/*margin-left: -70px;**/
-	background-color: #fff;
-	border:3px solid #fff;
-	border-radius: 10px;
 	position: relative;
  	}
  	.sous-case1 .bloc_6 img
  	{
  	width: 220px;
-	height:100px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;	
+	height:100px;	
  	}
  	.sous-case1 .bloc_6 h3{
  		position: absolute;
@@ -1258,18 +1274,11 @@ aside .chambre9 .icone_star1 ul
  	.sous-case2 .bloc_5{
  	width: 220px;
 	height: 150px;
-	/*margin-left: -65px;**/
-	margin-bottom: 30px;
-	background-color: #fff;
-	border:3px solid #fff;
-	border-radius: 10px;
 	position: relative;
  	}
  	.sous-case2 .bloc_5 img{
  	width: 220px;
 	height:100px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;	
  	}
  	.sous-case2 .bloc_5 h3{
  		position: absolute;
@@ -1279,10 +1288,7 @@ aside .chambre9 .icone_star1 ul
  	.sous-case2 .bloc_2{
  	width: 220px;
 	height: 150px;
-	/*margin-left: -65px;**/
-	background-color: #fff;
-	border:3px solid #fff;
-	border-radius: 10px;
+	margin-top: 30px;
 	position: relative;
  	}
  	.sous-case2 .bloc_2 img{
@@ -1308,18 +1314,12 @@ aside .chambre9 .icone_star1 ul
 	.sous-case3 .bloc_3{
  	width: 220px;
 	height: 150px;
-	/*margin-left: -70px;**/
-	background-color: #fff;
-	border:3px solid #fff;
-	border-radius: 10px;
 	position: relative;
  	}
  	.sous-case3 .bloc_3 img
  	{
  	width: 220px;
-	height:100px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;	
+	height:100px;	
  	}
  	.sous-case3 .bloc_3 h3{
  		position: absolute;
@@ -1329,18 +1329,12 @@ aside .chambre9 .icone_star1 ul
  	.sous-case4 .bloc_0{
  	width: 220px;
 	height: 150px;
-	/*margin-left: -70px;**/
-	background-color: #fff;
-	border:3px solid #fff;
-	border-radius: 10px;
 	position: relative;
  	}
  	.sous-case4 .bloc_0 img
  	{
  	width: 220px;
 	height:100px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;	
  	}
  	.sous-case4 .bloc_0 h3{
  		position: absolute;
@@ -1350,10 +1344,6 @@ aside .chambre9 .icone_star1 ul
  	.sous-case4 .bloc_4{
  	width: 220px;
 	height: 150px;
-	/*margin-left: -70px;**/
-	background-color: #fff;
-	border:3px solid #fff;
-	border-radius: 10px;
 	position: relative;
  	}
  	.sous-case4 .bloc_4 img
@@ -1373,14 +1363,408 @@ aside .chambre9 .icone_star1 ul
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	
 	}
 
 	.rubrique1,
 	.rubrique2,
 	.rubrique3{
 	padding-left: 0px;
-	width: 100%;
+	/*width: 100%;**/
+	}
+}
+
+/*iphone 8 **/
+
+@media(max-width: 375px){
+
+	.bloc_page{
+ 		max-width: 375px;
+ 		width: 100%;
+ 		margin-left: 0px;
+  	}
+
+
+  	.tete_de_page{
+  		display: flex;
+  		align-items: flex-start;
+  	}
+  	nav a{
+  		order: 2;
+  		align-self: flex-end;
+  		margin-left:15px;
+  		margin-right: -20px;
+  	}
+  	nav{
+  		display: flex;
+  		width: 100%;
+  		padding:0px;
+  	}
+  	.nav li{
+  		border-bottom: 3px solid #F2F2F2;
+  		padding-bottom: 15px;
+  		margin-left: -20px;
+  		width: 100%;
+  	}
+  	.nav li:hover{
+  		border-bottom: 3px solid #0065fc;
+  	}
+
+  	.nav a:hover{
+  	border-top: none;
+	}
+  	
+  	.inscription{
+  		align-self: flex-start;
+  		position: absolute;
+  		left: 270px;
+  		top: 10px;
+  	}
+  	#logo img{
+	width: 90px;
+	height: 40px;
+	margin-left: 15px;
+	margin-top: 20px;
+	}
+	.filtres h2
+{
+	margin: 15px;
+}
+.renseignement h2, p{
+	
+	margin: 15px;
+}
+
+.recherche{
+	margin: 15px;
+}
+.filtres
+{
+	margin: 15px;
+}
+.info
+{
+	margin: 15px;
+}
+ 	
+   	.search button i{
+	display: block;
+	}
+	.search button span{
+	display: none;
+}
+
+ 	section{
+    display: flex;
+    justify-content: space-between;
+   	}
+
+.aside .icon h2{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.aside .icon i{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+	aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 37px;
+    width: 100%;
+    padding-left: 0px;
+    order: 1;
+	}
+	.aside .container{
+	padding-left:0px;
+	width: 375px;
+	height: 450px;
+	padding: 0px 0px 0px 0px;
+	border-radius:0px;
+	background-color:#F2F2F2;
+	}
+	aside .bloc_1{
+	background-color: #fff;
+	border:3px solid #fff;
+	border-radius:10px;
+	margin: 5px;
+	height: 100px; 
+	width: 300px;
+	position: relative;
 	}
 
+	aside .container .bloc_1 img{
+	width: 150px;
+	height: 100px;
+	object-fit: cover;
+	
+		}
+	aside .chambre7 h3
+	{
+		font-size: 0.7em;
+		font-weight: bold;
+		position: absolute;
+		left:170px; 
+		top:-8px;
+		z-index: 20;
+	}
 
+	aside .chambre7 p
+	{
+		position: absolute;
+		left: 155px;
+		top:25px;
+		
+	}
+
+	aside .chambre7 .icone_star1 ul
+	{
+		position: absolute;
+		left: 130px;
+		top: 70px;
+	}
+	aside .chambre8 h3
+	{
+		font-size: 0.7em;
+		font-weight: bold;
+		position: absolute;
+		left:170px; 
+		top:-8px;
+		z-index: 20;
+	}
+
+	aside .chambre8 p
+	{
+		position: absolute;
+		left: 155px;
+		top:25px;
+		
+	}
+
+	aside .chambre8 .icone_star1 ul
+	{
+		position: absolute;
+		left: 130px;
+		top: 70px;
+	}
+	aside .chambre9 h3
+	{
+		font-size: 0.7em;
+		font-weight: bold;
+		position: absolute;
+		left:170px; 
+		top:-8px;
+		z-index: 20;
+	}
+
+	aside .chambre9 p
+	{
+		position: absolute;
+		left: 155px;
+		top:25px;
+		
+	}
+
+	aside .chambre9 .icone_star1 ul
+	{
+		position: absolute;
+		left: 130px;
+		top: 70px;
+	}
+
+	.heber{
+	order: 2;
+	}
+	.annonce{
+		font-size: 1.5em;
+		font-weight: bold;
+		margin: 8px;
+		margin-bottom: -20px;
+	}
+	.plus{
+		font-size: 1.5em;
+		font-weight: bolder;
+		margin: 8px;
+		margin-top: -10px;
+	}
+	.heber .container{
+		background-color: white;
+		padding-left: 0px;
+	}
+
+	.heber .bloc{
+	width: 300px;
+	margin-left:35px;
+	position: relative;	
+	}
+	.chambre1 img,
+	.chambre2 img, 
+	.chambre3 img,
+	.chambre4 img, 
+	.chambre5 img, 
+	.chambre6 img{
+	width: 300px;
+	height:100px;
+	}
+	.chambre1 h3,
+	.chambre2 h3, 
+	.chambre3 h3,
+	.chambre4 h3, 
+	.chambre5 h3, 
+	.chambre6 h3{
+	position: absolute;
+	left: 10px;
+	top: 100px;
+	}
+	.chambre1 p,
+	.chambre2 p, 
+	.chambre3 p,
+	.chambre4 p, 
+	.chambre5 p, 
+	.chambre6 p{
+	position: absolute;
+	top: 20px;
+	}
+	
+
+	.activites h2{
+		font-size: 1.5em;
+		padding-left: 10px;
+		padding-bottom: 10px;
+		font-weight: bold;
+		}
+
+	.container_2{
+		display: flex;
+		justify-content: flex-start;
+		margin: 8px;
+	}
+	.case1, .case2{
+		display: flex;
+		flex-direction: column;
+		padding-left:0px;
+		margin-right: 0px;
+	}
+	.container_2 .case1 .sous-case1{
+		margin-right: 0px;
+	}
+
+	.container_2 .case2 .sous-case3{
+		margin-right: 0px;
+	}
+	.sous-case1, .sous-case3{
+		margin-right: 0px;
+	}
+	
+	.sous-case1 .bloc_6{
+ 	width: 300px;
+	height: 180px;
+	position: relative;
+ 	}
+ 	.sous-case1 .bloc_6 img{
+ 	width: 300px;
+	height:130px;
+ 	}
+ 	.sous-case1 .bloc_6 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 130px;
+ 	}
+ 	.sous-case2 .bloc_5{
+ 	width: 300px;
+	height: 180px;
+	position: relative;
+ 	}
+ 	.sous-case2 .bloc_5 img{
+ 	width: 300px;
+	height:130px;
+ 	}
+ 	.sous-case2 .bloc_5 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 130px;
+ 	}
+ 	.sous-case2 .bloc_2{
+ 	width: 300px;
+	height: 180px;
+	position: relative;
+ 	}
+ 	.sous-case2 .bloc_2 img{
+ 	width: 300px;
+	height:130px;
+ 	}
+ 	.sous-case2 .bloc_2 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 130px;
+ 	}
+ 			
+	.sous-case4{
+		marging-left:0px;
+		padding-left: 0px;
+	}
+	.sous-case3{
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	.sous-case3 .bloc_3{
+ 	width: 300px;
+	height: 180px;
+	position: relative;
+ 	}
+ 	.sous-case3 .bloc_3 img
+ 	{
+ 	width: 300px;
+	height:130px;
+ 	}
+ 	.sous-case3 .bloc_3 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 130px;
+ 	}
+ 	.sous-case4 .bloc_0{
+ 	width: 300px;
+	height: 180px;
+	position: relative;
+ 	}
+ 	.sous-case4 .bloc_0 img
+ 	{
+ 	width: 300px;
+	height:130px;
+ 	}
+ 	.sous-case4 .bloc_0 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 130px;
+ 	}
+ 	.sous-case4 .bloc_4{
+ 	width: 300px;
+	height: 180px;
+	position: relative;
+ 	}
+ 	.sous-case4 .bloc_4 img
+ 	{
+ 	width: 300px;
+	height:130px;
+ 	}
+ 	.sous-case4 .bloc_4 h3{
+ 		position: absolute;
+ 		left: 10px;
+ 		top: 130px;
+ 	}
+
+	.footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-left: 40px;
+	}
+
+	.rubrique1,
+	.rubrique2,
+	.rubrique3{
+	padding-left: 0px;
+	/*width: 100%;**/
+	}
 }
