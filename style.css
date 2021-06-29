@@ -1046,6 +1046,7 @@ aside .chambre9 .icone_star1 span
 .footer 
 {
 	padding-top: 20px;
+	padding-left: 20px;
 	padding-bottom: 20px;
 	background-color:#F2F2F2;
 	display: flex;
@@ -1057,13 +1058,13 @@ aside .chambre9 .icone_star1 span
 .footer h2 	
 {
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 1.1em;
 	
 }
 
 .footer ul	
 {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	font-family: "raleway", time new roman, sans-serif;
 	list-style-type: none;
 	margin: 0px;
@@ -1074,29 +1075,31 @@ aside .chambre9 .icone_star1 span
 
 @media(max-width: 768px)
 {
-
- 	
-	.bloc_page{
+ 	.bloc_page{
  		max-width: 768px;
  		width: 100%;
  		margin-left: 0px;
   	}
- 	
-  	.tete_de_page{
-  		display: flex;
-  		flex-wrap: wrap;
+  	body{
+  		margin: 0px;
   	}
-  	.nav{
-  		justify-content: center;
-  		align-items: flex-end;
-  		justify-self: end;
-  		/*order: 2;**/
+ 	.tete_de_page{
+ 		font-size: 1em;
+  		display: flex;
+  		align-items: flex-start;
+  	}
+  	.nav {
+  		align-self: flex-end;
   	}
   	.inscription{
-
-  		order: 1;
+  		display: block;
+  		justify-content: flex-end;
+  		align-items: flex-end;
+  		align-self: flex-start;
+  		
   	}
-  	.search button i{
+ 	
+   	.search button i{
 	display: block;
 	}
 	.search button span{
@@ -1244,7 +1247,7 @@ aside .chambre9 .icone_star1 span
 	.container_2 .case1 .sous-case1{
 		margin-right: 0px;
 	}
-
+	
 	.container_2 .case2 .sous-case3{
 		margin-right: 0px;
 	}
@@ -1285,6 +1288,7 @@ aside .chambre9 .icone_star1 span
  	.sous-case2 .bloc_2{
  	width: 220px;
 	height: 150px;
+	margin-top: 30px;
 	position: relative;
  	}
  	.sous-case2 .bloc_2 img{
@@ -1379,22 +1383,71 @@ aside .chambre9 .icone_star1 span
  		width: 100%;
  		margin-left: 0px;
   	}
- 	
+
+
   	.tete_de_page{
   		display: flex;
-  		flex-wrap: wrap;
+  		align-items: flex-start;
   	}
-  	.nav{
-  		justify-content: center;
-  		align-items: flex-end;
-  		justify-self: end;
-  		/*order: 2;**/
+  	nav a{
+  		order: 2;
+  		align-self: flex-end;
+  		margin-left:15px;
+  		margin-right: -20px;
   	}
-  	.inscription{
+  	nav{
+  		display: flex;
+  		width: 100%;
+  		padding:0px;
+  	}
+  	.nav li{
+  		border-bottom: 3px solid #F2F2F2;
+  		padding-bottom: 15px;
+  		margin-left: -20px;
+  		width: 100%;
+  	}
+  	.nav li:hover{
+  		border-bottom: 3px solid #0065fc;
+  	}
 
-  		order: 1;
+  	.nav a:hover{
+  	border-top: none;
+	}
+  	
+  	.inscription{
+  		align-self: flex-start;
+  		position: absolute;
+  		left: 270px;
+  		top: 10px;
   	}
-  	.search button i{
+  	#logo img{
+	width: 90px;
+	height: 40px;
+	margin-left: 15px;
+	margin-top: 20px;
+	}
+	.filtres h2
+{
+	margin: 15px;
+}
+.renseignement h2, p{
+	
+	margin: 15px;
+}
+
+.recherche{
+	margin: 15px;
+}
+.filtres
+{
+	margin: 15px;
+}
+.info
+{
+	margin: 15px;
+}
+ 	
+   	.search button i{
 	display: block;
 	}
 	.search button span{
@@ -1407,10 +1460,12 @@ aside .chambre9 .icone_star1 span
    	}
 
 .aside .icon h2{
-	font-size: 0.9em;
+	font-size: 1.1em;
+	font-weight: bold;
 }
 .aside .icon i{
-	font-size: 0.9em;
+	font-size: 1.1em;
+	font-weight: bold;
 }
 	aside {
     display: flex;
@@ -1423,10 +1478,10 @@ aside .chambre9 .icone_star1 span
 	}
 	.aside .container{
 	padding-left:0px;
-	width: 350px;
+	width: 375px;
 	height: 450px;
 	padding: 0px 0px 0px 0px;
-	border-radius:10px;
+	border-radius:0px;
 	background-color:#F2F2F2;
 	}
 	aside .bloc_1{
@@ -1443,12 +1498,12 @@ aside .chambre9 .icone_star1 span
 	width: 150px;
 	height: 100px;
 	object-fit: cover;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
+	
 		}
 	aside .chambre7 h3
 	{
 		font-size: 0.7em;
+		font-weight: bold;
 		position: absolute;
 		left:170px; 
 		top:-8px;
@@ -1458,8 +1513,8 @@ aside .chambre9 .icone_star1 span
 	aside .chambre7 p
 	{
 		position: absolute;
-		left: 170px;
-		top:35px;
+		left: 155px;
+		top:25px;
 		
 	}
 
@@ -1472,6 +1527,7 @@ aside .chambre9 .icone_star1 span
 	aside .chambre8 h3
 	{
 		font-size: 0.7em;
+		font-weight: bold;
 		position: absolute;
 		left:170px; 
 		top:-8px;
@@ -1481,8 +1537,8 @@ aside .chambre9 .icone_star1 span
 	aside .chambre8 p
 	{
 		position: absolute;
-		left: 170px;
-		top:35px;
+		left: 155px;
+		top:25px;
 		
 	}
 
@@ -1495,6 +1551,7 @@ aside .chambre9 .icone_star1 span
 	aside .chambre9 h3
 	{
 		font-size: 0.7em;
+		font-weight: bold;
 		position: absolute;
 		left:170px; 
 		top:-8px;
@@ -1504,8 +1561,8 @@ aside .chambre9 .icone_star1 span
 	aside .chambre9 p
 	{
 		position: absolute;
-		left: 170px;
-		top:35px;
+		left: 155px;
+		top:25px;
 		
 	}
 
@@ -1519,7 +1576,18 @@ aside .chambre9 .icone_star1 span
 	.heber{
 	order: 2;
 	}
-
+	.annonce{
+		font-size: 1.5em;
+		font-weight: bold;
+		margin: 8px;
+		margin-bottom: -20px;
+	}
+	.plus{
+		font-size: 1.5em;
+		font-weight: bolder;
+		margin: 8px;
+		margin-top: -10px;
+	}
 	.heber .container{
 		background-color: white;
 		padding-left: 0px;
@@ -1527,6 +1595,8 @@ aside .chambre9 .icone_star1 span
 
 	.heber .bloc{
 	width: 300px;
+	margin-left:35px;
+	position: relative;	
 	}
 	.chambre1 img,
 	.chambre2 img, 
@@ -1537,16 +1607,38 @@ aside .chambre9 .icone_star1 span
 	width: 300px;
 	height:100px;
 	}
+	.chambre1 h3,
+	.chambre2 h3, 
+	.chambre3 h3,
+	.chambre4 h3, 
+	.chambre5 h3, 
+	.chambre6 h3{
+	position: absolute;
+	left: 10px;
+	top: 100px;
+	}
+	.chambre1 p,
+	.chambre2 p, 
+	.chambre3 p,
+	.chambre4 p, 
+	.chambre5 p, 
+	.chambre6 p{
+	position: absolute;
+	top: 20px;
+	}
 	
 
 	.activites h2{
-		padding-left: 0px;
+		font-size: 1.5em;
+		padding-left: 10px;
 		padding-bottom: 10px;
-	}
+		font-weight: bold;
+		}
 
 	.container_2{
 		display: flex;
 		justify-content: flex-start;
+		margin: 8px;
 	}
 	.case1, .case2{
 		display: flex;
@@ -1666,7 +1758,7 @@ aside .chambre9 .icone_star1 span
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	
+	padding-left: 40px;
 	}
 
 	.rubrique1,
