@@ -1071,8 +1071,6 @@ aside .chambre9 .icone_star1 span
 	padding: 0px;
 }
 
-
-
 @media(max-width: 768px)
 {
  	.bloc_page{
@@ -1758,13 +1756,12 @@ aside .chambre9 .icone_star1 span
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	padding-left: 40px;
+	padding-left: 50px;
 	}
 
 	.rubrique1,
 	.rubrique2,
 	.rubrique3{
 	padding-left: 0px;
-	/*width: 100%;**/
 	}
 }
