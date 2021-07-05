@@ -35,14 +35,15 @@
 
 #logo{
 	margin-right: auto;
+	margin-top: 10px;
+	padding-top: 10px;
 }
 
 #logo img
 {
-	width: 120px;
-	height: 80px;
-	
+	max-width: 120px;
 }
+
 .nav{
 	
 	 margin-right: 10px;
@@ -1368,7 +1369,7 @@ aside .chambre9 .icone_star1 span
 	.rubrique2,
 	.rubrique3{
 	padding-left: 0px;
-	/*width: 100%;**/
+	
 	}
 }
 
