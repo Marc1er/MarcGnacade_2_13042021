@@ -1392,7 +1392,6 @@ aside .chambre9 .icone_star1 span
   		order: 2;
   		align-self: flex-end;
   		margin-left:15px;
-  		margin-right: -20px;
   	}
   	nav{
   		display: flex;
@@ -1402,7 +1401,7 @@ aside .chambre9 .icone_star1 span
   	.nav li{
   		border-bottom: 3px solid #F2F2F2;
   		padding-bottom: 15px;
-  		margin-left: -20px;
+  		margin-left: -5px;
   		width: 100%;
   	}
   	.nav li:hover{
@@ -1417,13 +1416,13 @@ aside .chambre9 .icone_star1 span
   		align-self: flex-start;
   		position: absolute;
   		left: 270px;
-  		top: 10px;
+  		top: 15px;
   	}
   	#logo img{
-	width: 90px;
-	height: 40px;
+	max-width: 90px;
+	/*height: 40px;**/
 	margin-left: 15px;
-	margin-top: 20px;
+	/*margin-top: 5px;**/
 	}
 	.filtres h2
 {
