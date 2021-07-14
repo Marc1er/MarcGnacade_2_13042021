@@ -12,7 +12,7 @@
 	<body>
 		<div class="bloc_page">
 	<!-- header -->
-			<header>
+			<header class="margin">
 
 				<div class="site">
 					<div id="logo">
@@ -24,15 +24,14 @@
 
 							<nav>
 								<ul>
-									<li><a href="#">Hébergements</a></li>
-									<li><a href="#">Activitées</a></li>
+									<li><a href="#Accommodation"> Hébergements</a></li>
+									<li><a href="#Activity">Activitées</a></li>
 								</ul>
 							</nav>
 						</div>
 						
 						<div class="inscription">
-
-							<li><a href="#"><span>S'inscrire</span></a></li>	
+							<a href="#"><span>S'inscrire</span></a>	
 						</div>
 									
 					</div>		
@@ -41,11 +40,11 @@
 				
 			</header>
 
-			<main>
+			<main class="margin">
 
 				<!-- Section: renseignement -->	
 
-				<div class="renseignement">
+				<div class="renseignement" >
 
 					<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
 					<p>En plein centre ville ou en pleine nature</p>
@@ -56,7 +55,7 @@
 						<i class="fas fa-map-marker-alt"></i>
 					</div>
 					<div class="ville">
-						<input type="text" name="Marseille, France" placeholder="Marseille, France" />
+						<input type="text" id="text" value="Marseille, France">
 					</div>
 					<div class="search">
 						<button>
@@ -66,40 +65,34 @@
 					</div>
 				</div>
 
-				<div class="filtres">
+				<div id="filtres">
 
-					<h2>Filtres</h2>
+					<h2 class="filter">Filtres</h2>
 
-					<div class="listes">
-						<div class="box1">
-							<i class="fas fa-money-bill-wave"></i>
-							<p>économique</p>
+					<div class="filtres_button">
+						<i class="icontype fas fa-money-bill-wave"></i>
+						<h2>économique</h2>
+					</div>
 
-						</div>
+					<div class="filtres_button">
+						<i class="icontype fas fa-child"></i>
+						<h2>familial</h2>
+					</div>
 
-						<div class="box2">
-							<i class="fas fa-child"></i>
-							<p>familial</p>
-						</div>
+					<div class="filtres_button">
+						<i class="icontype fas fa-heart"></i>
+						<h2>Romantique</h2>
+					</div>
 
-						<div class="box3">
-							<i class="fas fa-heart"></i>
-							<p>Romantique</p>
-						</div>
-
-						<div class="box4">
-							<i class="fas fa-dog"></i>
-							<p>Animaux autorisés</p>
-						</div>
-
+					<div class="filtres_button">
+						<i class="icontype fas fa-dog"></i>
+						<h2>Animaux autorisés</h2>
 					</div>
 				</div>
 				<br>
 				<div class="info">
-
 					<i class="fas fa-info"></i>
 					<p>Plus de 500 logements sont disponibles dans cette ville</p>
-
 				</div>
 
 				<!-- section:caontainer_1-->
@@ -110,34 +103,34 @@
 						<div class="container">
 
 							<div class="annonce">
-								<h3>Hébergements à Marseille</h3>	
+								<h3 id="Accommodation">Hébergements à Marseille</h3>	
 							</div>
 							
 							<div class="row1">
+								<a href="#">
 
-								<div class="chambre1 bloc">
-									<div class="img">
-										<img src=" images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière" />
-									</div>
+								
+									<div class="chambre1 bloc">
+										<div class="img">
+											<img src=" images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière" />
+										</div>
 
-									<div class="nom">
-										<h3>Auberge la Cannebière</h3>
-										<p>Nuit à partir de 25<strong>€</strong></p>
-									</div>
-									<div class="icone_star">
-										<ul>
-											<li><i class="fas fa-star"></i></li>
-											<li><i class="fas fa-star"></i></li>
-											<li><i class="fas fa-star"></i></li>
-
-											<div class="etoile">
+										<div class="nom">
+											<h3>Auberge la Cannebière</h3>
+											<p>Nuit à partir de 25<strong>€</strong></p>
+										</div>
+										<div class="icone_star">
+											<ul>
+												<li><i class="fas fa-star"></i></li>
+												<li><i class="fas fa-star"></i></li>
+												<li><i class="fas fa-star"></i></li>
 												<li><i class="fas fa-star"></i></li>
 												<li><span><i class="fas fa-star"></i></span></li>
-											</div>
-										</ul>
+											</ul>		
+												
+										</div>
 									</div>
-								</div>
-
+								</a>	
 
 								<div class="chambre2 bloc">
 									<div class="img">
@@ -316,9 +309,9 @@
 				<section>
 
 					<div class="activites">
-						<span class="activites">
-							<h2>Activités à Marseille</h2>
-						</span>
+						<div class="activites">
+							<h2 id="Activity">Activités à Marseille</h2>
+						</div>
 
 						<div class="container_2">
 
@@ -365,15 +358,13 @@
 
 									<div class="activités_4 bloc_4">
 										<img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc lomgchamp">
-										<h3>Parc lomgchamp</h3>
+										<h3>Parc longchamp</h3>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-
-
 			</main>
 
 
