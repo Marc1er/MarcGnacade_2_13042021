@@ -921,9 +921,17 @@ aside .chambre9 .icone_star1 span
 	padding-bottom: 20px;
 	background-color:#F2F2F2;
 	display: flex;
-	justify-content: space-around;
+	justify-content:flex-start;
+	align-items: flex-start;
 	flex-wrap: wrap;
 
+}
+
+.rubrique1{
+	margin-right: 300px;
+}
+.rubrique2{
+	margin-right: 300px;
 }
 
 .footer h2 	
