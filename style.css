@@ -487,14 +487,16 @@ border-top-right-radius: 10px;
 
 }
 
+.aside{
+	display: flex;
+}
+
 .aside .container
 {
-	display: flex;
-	justify-content: space-evenly;
+	/*justify-content: flex-start;*/
 	flex-direction: column;
-	align-content: center;
-	width: 420px;
-	height: 580px;
+	/*align-content: center;*/
+	width: 100%;
 	padding: 0px 0px 0px 0px;
 	border-radius:10px;
 	background-color:#F2F2F2;
@@ -532,7 +534,7 @@ aside .bloc_1
 	background-color: #fff;
 	border:3px solid #fff;
 	border-radius: 10px;
-	margin: 5px;
+	margin: 20px;
 	height: 130px; 
 	width: 350px;
 	position: relative;
@@ -631,8 +633,9 @@ aside .chambre9 .icone_star1 span
 .aside .icon h2
 {
 	font-size: 1em;
-	margin-left: -5px;
+	/*margin-left: -5px;*/
 	margin-right: 100px;
+	margin-bottom: 20px;
 	z-index: 20;
 	/*position: absolute;*/
 	
@@ -914,17 +917,19 @@ aside .chambre9 .icone_star1 span
 	top: 350px;
 
 }
-.footer 
+
+.footer
 {
 	padding-top: 20px;
 	padding-left: 20px;
 	padding-bottom: 20px;
 	background-color:#F2F2F2;
+	text-decoration: none;
 	display: flex;
 	justify-content:flex-start;
 	align-items: flex-start;
 	flex-wrap: wrap;
-
+	cursor: pointer;
 }
 
 .rubrique1{
@@ -950,328 +955,95 @@ aside .chambre9 .icone_star1 span
 	padding: 0px;
 }
 
-@media (min-width:769px) and (max-width:1260){
+@media all and (min-width: 376px) and (max-width: 1280px){
 	
 	.bloc_page{
-		min-width: 769px;
+		min-width: 376px;
         max-width: 1260px;
         width: 100%;
         margin: 0px;
 	}
-	
-}
 
-@media(max-width: 768px)
-{
- 	.bloc_page{
- 		max-width: 768px;
- 		width: 100%;
- 		margin-left: 0px;
-  	}
-  	body{
-  		margin: 0px;
-  	}
-
-	.margin{
-		margin: 10px;
-	} 
-
-	#filtres{
-		margin:10px;
+	.tete_de_page{
+		display: flex;
+	justify-content: flex-end;
+	align-self: flex-end;
+		width: 100%;
+	}
+	.nav ul{
+		top: 5px;
+	}
+	.inscription{
+		position: absolute;
+		top: 30px;
 	}
 
- 	.tete_de_page{
- 		font-size: 1em;
-  		display: flex;
-  		align-items: flex-start;
-  	}
-  	.nav {
-  		align-self: flex-end;
-  	}
-  	.inscription{
-  		display: block;
-  		justify-content: flex-end;
-  		align-items: flex-end;
-  		align-self: flex-start;
-  	}
-
-	
- 	
-   	.search button i{
-	display: block;
+	.nav li{
+		border-bottom: 3px solid #F2F2F2;
+		padding-bottom: 15px;
+		width: 100%;
 	}
 
-	.search button span{
-	display: none;
+	.nav li:hover{
+		border-bottom: 3px solid #0065fc;
 	}
 
- 	section{
-    display: flex;
-    justify-content: space-between;
-   	}
-
-.aside .icon h2{
-	font-size: 0.8em;
-}
-.aside .icon i{
-	font-size: 0.8em;
-}
-	aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 37px;
-    width: 100%;
-    padding-left: 20px;
-    /*order: 1;*/
-	}
-	.aside .container{
-	padding-left:0px;
-	width: 250px;
-	height: 450px;
-	padding: 0px 0px 0px 0px;
-	border-radius:10px;
-	background-color:#F2F2F2;
-	}
-	aside .bloc_1{
-	background-color: #fff;
-	border:3px solid #fff;
-	border-radius:10px;
-	margin: 5px;
-	height: 100px; 
-	width: 200px;
-	position: relative;
-	}
-
-	aside .container .bloc_1 img{
-	width: 90px;
-	height: 100px;
-	object-fit: cover;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
+	.search button i{
+		display: block;
 		}
-	aside .chambre7 h3
-	{
-		font-size: 0.7em;
-		position: absolute;
-		left:100px; 
-		top:-8px;
-		z-index: 20;
+	
+	.search button span{
+		display: none;
+	}
+	
+
+	.nav a:hover{
+		border-top: none;
 	}
 
-	aside .chambre7 p
-	{
-		position: absolute;
-		left: 100px;
-		top:35px;
-		
+	aside{
+		order: 1;
+		width: 100%;
+		justify-content: flex-start;
 	}
 
-	aside .chambre7 .icone_star1 ul
-	{
-		position: absolute;
-		left: 60px;
-		top: 80px;
-	}
-	aside .chambre8 h3
-	{
-		font-size: 0.7em;
-		position: absolute;
-		left:100px; 
-		top:-8px;
-		z-index: 20;
-	}
-
-	aside .chambre8 p{
-		position: absolute;
-		left: 100px;
-		top:35px;
-	}
-
-	aside .chambre8 .icone_star1 ul
-	{
-		position: absolute;
-		left: 60px;
-		top: 80px;
-	}
-	aside .chambre9 h3
-	{
-		font-size: 0.7em;
-		position: absolute;
-		left:100px; 
-		top:-8px;
-		z-index: 20;
-	}
-
-	aside .chambre9 p
-	{
-		position: absolute;
-		left: 100px;
-		top:35px;
-		
-	}
-
-	aside .chambre9 .icone_star1 ul
-	{
-		position: absolute;
-		left: 60px;
-		top: 80px;
+	.aside .icon {
+		justify-content: space-between;
 	}
 
 	.heber{
-	order: 2;
-	}
-
-	.heber .container{
-		background-color: white;
-		padding-left: 0px;
-	}
-
-	.activites h2{
-		padding-left: 0px;
-		padding-bottom: 10px;
-	}
-
-	.container_2{
-		
-		display: flex;
-		justify-content: flex-start;
-	}
-	.case1, .case2{
-		display: flex;
-		flex-direction: column;
-		padding-left:0px;
-		margin-right: 0px;
-	}
-	.container_2 .case1 .sous-case1{
-		margin-right: 0px;
+		order: 2;
 	}
 	
-	.container_2 .case2 .sous-case3{
-		margin-right: 0px;
-	}
-	.sous-case1, .sous-case3{
-		margin-right: 0px;
-	}
-	
-	.sous-case1 .bloc_6
- 	{
- 	width: 220px;
-	height: 150px;
-	position: relative;
- 	}
- 	.sous-case1 .bloc_6 img
- 	{
- 	width: 220px;
-	height:100px;	
- 	}
- 	.sous-case1 .bloc_6 h3{
- 		position: absolute;
- 		left: 10px;
- 		top: 100px;
- 	}
- 	.sous-case2 .bloc_5{
- 	width: 220px;
-	height: 150px;
-	position: relative;
- 	}
- 	.sous-case2 .bloc_5 img{
- 	width: 220px;
-	height:100px;
- 	}
- 	.sous-case2 .bloc_5 h3{
- 		position: absolute;
- 		left: 10px;
- 		top: 100px;
- 	}
- 	.sous-case2 .bloc_2{
- 	width: 220px;
-	height: 150px;
-	margin-top: 30px;
-	position: relative;
- 	}
- 	.sous-case2 .bloc_2 img{
- 	width: 220px;
-	height:100px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;	
- 	}
- 	.sous-case2 .bloc_2 h3{
- 		position: absolute;
- 		left: 10px;
- 		top: 100px;
- 	}
- 			
-	.sous-case4{
-		margin-left:0px;
-		padding-left: 0px;
-	}
-	.sous-case3{
-		margin-left: 0px;
-		padding-left: 0px;
-	}
-	.sous-case3 .bloc_3{
- 	width: 220px;
-	height: 150px;
-	position: relative;
- 	}
- 	.sous-case3 .bloc_3 img
- 	{
- 	width: 220px;
-	height:100px;	
- 	}
- 	.sous-case3 .bloc_3 h3{
- 		position: absolute;
- 		left: 10px;
- 		top: 100px;
- 	}
- 	.sous-case4 .bloc_0{
- 	width: 220px;
-	height: 150px;
-	position: relative;
- 	}
- 	.sous-case4 .bloc_0 img
- 	{
- 	width: 220px;
-	height:100px;
- 	}
- 	.sous-case4 .bloc_0 h3{
- 		position: absolute;
- 		left: 10px;
- 		top: 100px;
- 	}
- 	.sous-case4 .bloc_4{
- 	width: 220px;
-	height: 150px;
-	position: relative;
- 	}
- 	.sous-case4 .bloc_4 img
- 	{
- 	width: 220px;
-	height:100px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;	
- 	}
- 	.sous-case4 .bloc_4 h3{
- 		position: absolute;
- 		left: 10px;
- 		top: 100px;
- 	}
+	.aside .container{
 
-	.footer{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	
-	}
-
-	.rubrique1,
-	.rubrique2,
-	.rubrique3{
-	padding-left: 0px;
-	
-	}
+	width: 100%;
+	background-color:#F2F2F2;
+	/*position: relative;*/
 }
+
+.aside .bloc_1{
+	background-color: #fff;
+	border:3px solid #fff;
+	border-radius:10px;
+	padding-right: 0px;
+	margin: 5px;
+	height: 130px; 
+	width: 95%;
+	/*position: relative;*/
+}
+
+aside .container .bloc_1 img{
+	width: 170px;
+	height: 130px;
+	object-fit: cover;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+
+}
+
 
 /*iphone 8 **/
 
@@ -1321,7 +1093,7 @@ aside .chambre9 .icone_star1 span
   	#logo img{
 	max-width: 90px;
 	/*height: 40px;**/
-	margin-left: 15px;
+	/*margin-left: 15px;
 	/*margin-top: 5px;**/
 	}
 	.filtres h2
