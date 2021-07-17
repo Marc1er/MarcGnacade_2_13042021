@@ -214,21 +214,19 @@ section
 	position: relative;
 }
 
-.annonce h3
+.annonce h2
 {
 	font-weight: bold;
 	font-size: 1em;
-	/*position: absolute;*/
 	margin-left: 30px;
 	margin-top: 10px;
 	z-index: 10;
 }
 
-.plus p
+.plus h2
  {
 	font-size: 0.9em;
 	font-weight: bold;
-	/*position: absolute;*/
 	padding-top:10px;
 	margin:10px 0px 10px 30px;
 }
@@ -261,9 +259,7 @@ section
     transition: all 0.2s ease-in-out;
 }
 
-.heber .bloc
-{
-	/* display:flex; */
+.heber .bloc{
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	width: 260px;
@@ -447,7 +443,7 @@ border-top-right-radius: 10px;
 
 .nom
 {
-	/* display: flex; */
+
 	font-size: 1em;
 	
 }
@@ -469,8 +465,6 @@ border-top-right-radius: 10px;
 .icone_star ul li
 {
 	display: flex;
-	/*padding-top: 118px;*/
-	/*margin-left: -195px;*/
 	list-style-type:none;
 	font-size: 10px; 
 	color:#0065FC; 
@@ -491,11 +485,8 @@ border-top-right-radius: 10px;
 	display: flex;
 }
 
-.aside .container
-{
-	/*justify-content: flex-start;*/
+.aside .container{
 	flex-direction: column;
-	/*align-content: center;*/
 	width: 100%;
 	padding: 0px 0px 0px 0px;
 	border-radius:10px;
@@ -633,12 +624,10 @@ aside .chambre9 .icone_star1 span
 .aside .icon h2
 {
 	font-size: 1em;
-	/*margin-left: -5px;*/
+
 	margin-right: 100px;
 	margin-bottom: 20px;
 	z-index: 20;
-	/*position: absolute;*/
-	
 }
 
 .aside .icon i
@@ -646,18 +635,14 @@ aside .chambre9 .icone_star1 span
 	padding-top:10px;
 	font-size: 20px;
 	z-index: 20;
-	/*position: absolute;*/
-	
 }
 
 .activites h2
 {
 	font-size:0.9em;
 	font-weight: bold;
-	/*position: absolute;*/
-	/*margin-left: 0px;*/
 	margin-top: 20px;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 	
 }
 
@@ -672,8 +657,8 @@ aside .chambre9 .icone_star1 span
 }
 .container_2 .case1
 {
-	/*padding-left:20px;*/
-	margin-right: 25px;
+	
+	margin-right: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -681,7 +666,6 @@ aside .chambre9 .icone_star1 span
 }
 .container_2 .case1 .sous-case1
 {
-	display: flex;
 	flex-wrap: wrap;
 	margin-right: 40px;
 	justify-content: center;
@@ -689,7 +673,7 @@ aside .chambre9 .icone_star1 span
 }
 .container_2 .case1 .sous-case2
 {
-	display: flex;
+
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-around;
@@ -708,7 +692,6 @@ aside .chambre9 .icone_star1 span
 .container_2 .case2 .sous-case3
 {
 	margin-right: 40px;
-	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items:center;
@@ -716,7 +699,7 @@ aside .chambre9 .icone_star1 span
 
 .container_2 .case2 .sous-case4
 {
-	display: flex;
+
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-around;
@@ -971,11 +954,13 @@ aside .chambre9 .icone_star1 span
 		width: 100%;
 	}
 	.nav ul{
+		font-size: 1.1em;
 		top: 5px;
 	}
 	.inscription{
+		font-size: 1.1em;
 		position: absolute;
-		top: 30px;
+		top: 40px;
 	}
 
 	.nav li{
@@ -1013,13 +998,13 @@ aside .chambre9 .icone_star1 span
 
 	.heber{
 		order: 2;
+		width: 100%;
 	}
 	
 	.aside .container{
 
 	width: 100%;
 	background-color:#F2F2F2;
-	/*position: relative;*/
 }
 
 .aside .bloc_1{
@@ -1030,20 +1015,174 @@ aside .chambre9 .icone_star1 span
 	margin: 5px;
 	height: 130px; 
 	width: 95%;
-	/*position: relative;*/
 }
 
-aside .container .bloc_1 img{
-	width: 170px;
-	height: 130px;
-	object-fit: cover;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
+.row1, .row2{
+	width: 100%;
+	flex-direction: column;
 }
 
-
+.container{
+	width: 100%;
+	padding-left: 0px;
+	background-color: #fff;
 }
 
+.heber .bloc{
+	width: 100%;
+	margin:5px;
+	margin-left: 0px;
+}
+
+.bloc img{
+	width: 100%;
+}
+
+.annonce h2
+{
+	margin-left: 0px;
+	margin-bottom: 15px;
+}
+
+.plus h2{
+	margin:10px 0px 10px 0px;
+}
+
+.activites{
+	width: 100%;
+}
+.container_2{
+	flex-direction: column;
+	width: 100%;
+}
+
+.container_2 .case1
+{
+	margin-right: 0px;
+	flex-direction: column;
+	width: 100%;
+	order: 1;
+	
+}
+.container_2 .case1 .sous-case1
+{
+	width: 100%;
+	margin-right: 0px;
+	
+}
+
+.container_2 .case2{
+	padding-left:0px;
+	flex-direction: column;
+	width: 100%;
+	order: 2;
+
+}
+.container_2 .case2 .sous-case3
+{
+	margin-right: 0px;
+	width: 100%;
+	
+}
+
+.sous-case1 .bloc_6{
+	width: 100%;
+   height: 180px;
+   /*position: relative;*/
+	}
+
+.sous-case1 .bloc_6 img{
+	width: 100%;
+   height:130px;
+	}
+	
+.sous-case1 .bloc_6 h3{
+		position: absolute;
+		left: 10px;
+		top: 130px;
+	}
+
+.sous-case2 .bloc_5{
+	width: 100%;
+   height: 180px;
+   position: relative;
+	}
+
+.sous-case2 .bloc_5 img{
+	width: 100%;
+   height:130px;
+	}
+
+.sous-case2 .bloc_5 h3{
+		position: absolute;
+		left: 10px;
+		top: 130px;
+	}
+
+.sous-case2 .bloc_2{
+	width: 100%;
+   height: 180px;
+   position: relative;
+	}
+
+.sous-case2 .bloc_2 img{
+	width: 100%;
+   height:130px;
+	}
+
+.sous-case2 .bloc_2 h3{
+		position: absolute;
+		left: 10px;
+		top: 130px;
+	}
+			
+.sous-case3 .bloc_3{
+	width: 100%;
+   height: 180px;
+   position: relative;
+	}
+.sous-case3 .bloc_3 img{
+	width: 100%;
+   height:130px;
+	}
+
+.sous-case3 .bloc_3 h3{
+		position: absolute;
+		left: 10px;
+		top: 130px;
+	}
+
+.sous-case4 .bloc_0{
+	width: 100%;
+   height: 180px;
+   position: relative;
+	}
+.sous-case4 .bloc_0 img{
+	width: 100%;
+   height:130px;
+	}
+.sous-case4 .bloc_0 h3{
+		position: absolute;
+		left: 10px;
+		top: 130px;
+	}
+.sous-case4 .bloc_4{
+	width: 100%;
+   height: 180px;
+   position: relative;
+	}
+.sous-case4 .bloc_4 img{
+	width: 100%;
+   height:130px;
+	}
+
+.sous-case4 .bloc_4 h3{
+		position: absolute;
+		left: 10px;
+		top: 130px;
+	}
+
+}
 
 /*iphone 8 **/
 
