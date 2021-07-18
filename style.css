@@ -1036,7 +1036,25 @@ aside .chambre9 .icone_star1 span
 	width: 100%;
 }
 
+<<<<<<< HEAD
 .annonce h2
+=======
+  	.nav a:hover{
+  	border-top: none;
+	}
+  	
+  	.inscription{
+  		align-self: flex-start;
+  		position: absolute;
+  		left: 270px;
+  		top: 15px;
+  	}
+  	#logo img{
+	max-width: 90px;
+	margin-left: 15px;
+	}
+	.filtres h2
+>>>>>>> gh-pages
 {
 	margin-left: 0px;
 	margin-bottom: 15px;
@@ -1179,7 +1197,7 @@ aside .chambre9 .icone_star1 span
 		left: 10px;
 		top: 130px;
 	}
-
+	
 }
 
 /*iphone 8 **/
