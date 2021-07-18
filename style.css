@@ -949,16 +949,17 @@ aside .chambre9 .icone_star1 span
 	display: flex;
 	justify-content: flex-end;
 	align-self: flex-end;
-		width: 100%;
+	width: 100%;
 	}
 	.nav ul{
 		font-size: 1em;
 		top: 5px;
 	}
 	.inscription{
+		align-self: flex-start;
 		font-size: 1em;
 		position: absolute;
-		top: 20px;
+		top: 15px;
 	}
 
 	.nav li{
@@ -1042,12 +1043,7 @@ aside .chambre9 .icone_star1 span
   	border-top: none;
 	}
   	
-  	.inscription{
-  		align-self: flex-start;
-  		position: absolute;
-  		left: 270px;
-  		top: 15px;
-  	}
+
   	#logo img{
 	max-width: 90px;
 	margin-left: 15px;
