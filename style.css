@@ -674,7 +674,7 @@ aside .chambre9 .icone_star1 span
 
 	flex-wrap: wrap;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 .container_2 .case2
@@ -777,7 +777,7 @@ aside .chambre9 .icone_star1 span
 
 .container_2 .activités_3 img
 {
-	width: 300px;
+	width: 305px;
 	height: 350px;
 	object-fit: cover;
 	border-top-left-radius: 12px;
@@ -791,7 +791,7 @@ aside .chambre9 .icone_star1 span
 	border-style: none;
 	border-radius: 10px;
 	height: 400px; 
-	width: 300px;
+	width: 305px;
 	margin-bottom: 30px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	position: relative;
@@ -852,7 +852,7 @@ aside .chambre9 .icone_star1 span
 	height:200px; 
 	width: 330px;
 	margin-top: 0px;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	position: relative;
 	
@@ -869,7 +869,7 @@ aside .chambre9 .icone_star1 span
 
 .container_2 .activités_6 img
 {
-	width: 300px;
+	width: 305px;
 	height: 350px;
 	object-fit: cover;
 	border-top-left-radius: 12px;
@@ -883,7 +883,7 @@ aside .chambre9 .icone_star1 span
 	border-style: none;
 	border-radius: 10px;
 	height: 400px; 
-	width: 300px;
+	width: 305px;
 	margin-bottom: 30px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	position: relative;
@@ -953,6 +953,7 @@ aside .chambre9 .icone_star1 span
 	}
 	.nav ul{
 		font-size: 1em;
+		
 		top: 5px;
 	}
 	.inscription{
@@ -965,6 +966,7 @@ aside .chambre9 .icone_star1 span
 	.nav li{
 		border-bottom: 3px solid #F2F2F2;
 		padding-bottom: 15px;
+		margin-left: -20px;
 		width: 100%;
 	}
 
@@ -1037,20 +1039,21 @@ aside .chambre9 .icone_star1 span
 	width: 100%;
 }
 
+.annonce h2{
+	font-weight: bold;
+	font-size: 1em;
+	margin-left: 5px;
+}
 
-.annonce h2
-  	.nav a:hover{
+.nav a:hover{
   	border-top: none;
 	}
   	
-
-  	#logo img{
+#logo img{
 	max-width: 90px;
 	margin-left: 15px;
 	}
-	.filtres h2
-
-{
+.filtres h2{
 	margin-left: 0px;
 	margin-bottom: 15px;
 }
