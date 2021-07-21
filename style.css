@@ -112,7 +112,6 @@
 	justify-content: center;
 	align-content: center;
 	padding: 5px;
-	/*margin-left: 10px;*/
  	font-size: 16px;
  	border-style: none;
 }
@@ -157,7 +156,6 @@
     background-color: #DEEBFF;
     color: #0065fc;
     padding: 15px;
-	/*padding-top:20px;*/
     border-radius: 50px;
     margin-right: 10px;
     text-align: center;
@@ -179,7 +177,7 @@ border-bottom-left-radius:10px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	/*margin-left: 15px;*/
+	
 }
 
 .info i
@@ -651,7 +649,7 @@ aside .chambre9 .icone_star1 span
 	flex-wrap: wrap;
 	border-radius:10px;
 	margin-left: 0px;
-	/*background-color:red;*/
+	
 }
 .container_2 .case1
 {
@@ -660,7 +658,6 @@ aside .chambre9 .icone_star1 span
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	 /*background-color:green;*/ 
 }
 .container_2 .case1 .sous-case1
 {
@@ -674,18 +671,17 @@ aside .chambre9 .icone_star1 span
 
 	flex-wrap: wrap;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 .container_2 .case2
 {
 	
 	padding-left:20px;
-	/*margin-right: 25px;*/
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	 /*background-color: blue;*/
+	 
 }
 .container_2 .case2 .sous-case3
 {
@@ -777,7 +773,7 @@ aside .chambre9 .icone_star1 span
 
 .container_2 .activités_3 img
 {
-	width: 300px;
+	width: 305px;
 	height: 350px;
 	object-fit: cover;
 	border-top-left-radius: 12px;
@@ -791,7 +787,7 @@ aside .chambre9 .icone_star1 span
 	border-style: none;
 	border-radius: 10px;
 	height: 400px; 
-	width: 300px;
+	width: 305px;
 	margin-bottom: 30px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	position: relative;
@@ -852,7 +848,7 @@ aside .chambre9 .icone_star1 span
 	height:200px; 
 	width: 330px;
 	margin-top: 0px;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	position: relative;
 	
@@ -869,7 +865,7 @@ aside .chambre9 .icone_star1 span
 
 .container_2 .activités_6 img
 {
-	width: 300px;
+	width: 305px;
 	height: 350px;
 	object-fit: cover;
 	border-top-left-radius: 12px;
@@ -883,7 +879,7 @@ aside .chambre9 .icone_star1 span
 	border-style: none;
 	border-radius: 10px;
 	height: 400px; 
-	width: 300px;
+	width: 305px;
 	margin-bottom: 30px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 	position: relative;
@@ -953,6 +949,7 @@ aside .chambre9 .icone_star1 span
 	}
 	.nav ul{
 		font-size: 1em;
+		
 		top: 5px;
 	}
 	.inscription{
@@ -965,6 +962,7 @@ aside .chambre9 .icone_star1 span
 	.nav li{
 		border-bottom: 3px solid #F2F2F2;
 		padding-bottom: 15px;
+		margin-left: -20px;
 		width: 100%;
 	}
 
@@ -1037,20 +1035,21 @@ aside .chambre9 .icone_star1 span
 	width: 100%;
 }
 
+.annonce h2{
+	font-weight: bold;
+	font-size: 1em;
+	margin-left: 5px;
+}
 
-.annonce h2
-  	.nav a:hover{
+.nav a:hover{
   	border-top: none;
 	}
   	
-
-  	#logo img{
+#logo img{
 	max-width: 90px;
 	margin-left: 15px;
 	}
-	.filtres h2
-
-{
+.filtres h2{
 	margin-left: 0px;
 	margin-bottom: 15px;
 }
@@ -1099,7 +1098,7 @@ aside .chambre9 .icone_star1 span
 .sous-case1 .bloc_6{
 	width: 100%;
    height: 180px;
-   /*position: relative;*/
+   
 	}
 
 .sous-case1 .bloc_6 img{
@@ -1286,7 +1285,7 @@ aside .chambre9 .icone_star1 span
 	aside{
 		order: 1;
 		width: 100%;
-		/*justify-content: flex-start;*/
+		
 	}
 	
 	.aside .icon {
@@ -1386,7 +1385,7 @@ aside .chambre9 .icone_star1 span
 	.sous-case1 .bloc_6{
 		width: 100%;
 	   height: 180px;
-	   /*position: relative;*/
+	   
 		}
 	
 	.sous-case1 .bloc_6 img{
