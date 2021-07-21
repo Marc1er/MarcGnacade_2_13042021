@@ -112,7 +112,6 @@
 	justify-content: center;
 	align-content: center;
 	padding: 5px;
-	/*margin-left: 10px;*/
  	font-size: 16px;
  	border-style: none;
 }
@@ -157,7 +156,6 @@
     background-color: #DEEBFF;
     color: #0065fc;
     padding: 15px;
-	/*padding-top:20px;*/
     border-radius: 50px;
     margin-right: 10px;
     text-align: center;
@@ -179,7 +177,7 @@ border-bottom-left-radius:10px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	/*margin-left: 15px;*/
+	
 }
 
 .info i
@@ -651,7 +649,7 @@ aside .chambre9 .icone_star1 span
 	flex-wrap: wrap;
 	border-radius:10px;
 	margin-left: 0px;
-	/*background-color:red;*/
+	
 }
 .container_2 .case1
 {
@@ -660,7 +658,6 @@ aside .chambre9 .icone_star1 span
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	 /*background-color:green;*/ 
 }
 .container_2 .case1 .sous-case1
 {
@@ -681,11 +678,10 @@ aside .chambre9 .icone_star1 span
 {
 	
 	padding-left:20px;
-	/*margin-right: 25px;*/
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	 /*background-color: blue;*/
+	 
 }
 .container_2 .case2 .sous-case3
 {
@@ -1102,7 +1098,7 @@ aside .chambre9 .icone_star1 span
 .sous-case1 .bloc_6{
 	width: 100%;
    height: 180px;
-   /*position: relative;*/
+   
 	}
 
 .sous-case1 .bloc_6 img{
@@ -1289,7 +1285,7 @@ aside .chambre9 .icone_star1 span
 	aside{
 		order: 1;
 		width: 100%;
-		/*justify-content: flex-start;*/
+		
 	}
 	
 	.aside .icon {
@@ -1389,7 +1385,7 @@ aside .chambre9 .icone_star1 span
 	.sous-case1 .bloc_6{
 		width: 100%;
 	   height: 180px;
-	   /*position: relative;*/
+	   
 		}
 	
 	.sous-case1 .bloc_6 img{
