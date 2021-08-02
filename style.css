@@ -225,7 +225,7 @@ section
 .annonce h2
 {
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 1.1em;
 	margin-left: 30px;
 	margin-top: 10px;
 	z-index: 10;
@@ -632,7 +632,7 @@ aside .chambre9 .icone_star1 span
 
 .aside .icon h2
 {
-	font-size: 1em;
+	font-size: 1.1em;
 
 	margin-right: 100px;
 	margin-bottom: 20px;
@@ -648,7 +648,7 @@ aside .chambre9 .icone_star1 span
 
 .activites h2
 {
-	font-size:0.9em;
+	font-size:1.1em;
 	font-weight: bold;
 	margin-top: 20px;
 	margin-bottom: 25px;
